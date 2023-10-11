@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.master')
 @section('content')
 
           <!-- ====================================
@@ -11,7 +11,7 @@
 
 
 
-		
+
                   <!-- Top Statistics -->
                   <div class="row">
                     <div class="col-xl-3 col-sm-6">
@@ -61,7 +61,7 @@
                   </div>
 
 
-		
+
 
 
 
