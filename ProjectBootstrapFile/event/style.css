@@ -1,0 +1,229 @@
+                                            /*navbar*/
+.nav-body{
+    width: 1200px;
+    height: 49px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+.nav-event-text{
+    color: black;
+    font-size: 40px;
+    font-family: Product Sans,serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.nav-hive-text{
+    color: #7848F4;
+    font-size: 40px;
+    font-family: Product Sans,serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.nav-all-list{
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+}
+.nav-login{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.nav-button-background{
+    padding: 10px 20px;
+    background: #7848F4;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.nav-signup{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+                                                        /*footer*/
+.foot-body{
+    width: 1440px;
+    height: 334px;
+    position: relative;
+}
+.foot-div{
+    width: 1440px;
+    height: 334px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #10107B;
+}
+.foot-event-hive-div{
+    left: 622px;
+    top: 30px;
+    position: absolute;
+    text-align: center;
+}
+.foot-event-text{
+    color: #F8F8FA;
+    font-size: 40px;
+    font-family: Product Sans, serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.foot-form{
+    width: 450px;
+    height: 50px;
+    left: 495px;
+    top: 99px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+.foot-mail-div{
+    flex: 1 1 0;
+    height: 50px;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.foot-mail-text{
+    color: #687C94;
+    font-size: 12px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-subscribe-div{
+    width: 150px;
+    padding: 15px 40px;
+    background: #7848F4;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.foot-subscribe-div{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-list-div{
+    width: 492px;
+    height: 48px;
+    left: 474px;
+    top: 179px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+.foot-list{
+    width: 108px;
+    height: 48px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-white-line{
+    width: 1320px;
+    height: 0;
+    left: 60px;
+    top: 257px;
+    position: absolute;
+    border: 1px white solid;
+}
+.foot-copyright-text{
+    left: 1065px;
+    top: 286px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-link-div{
+    width: 124px;
+    height: 31px;
+    left: 658px;
+    top: 280px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: inline-flex;
+}
+.foot-english-text{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-french-text{
+   text-align: center;
+    color: white;
+    font-size: 10px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-hindi-text{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-family: Product Sans, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.foot-english-div{
+    width: 70px;
+    height: 31px;
+    padding: 15px 40px;
+    background: #7848F4;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+.foot-language{
+    width: 143px;
+    height: 31px;
+    left: 60px;
+    top: 280px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+
+
+
+
