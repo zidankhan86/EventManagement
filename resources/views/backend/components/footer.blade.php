@@ -2,7 +2,7 @@
  <footer class="footer mt-auto">
     <div class="copyright bg-white">
       <p>
-        Copyright &copy; <span id="copy-year"></span> a template by <a class="text-primary" href="https://themefisher.com" target="_blank">Themefisher</a>.
+        Copyright &copy; <span id="copy-year"></span> a template by <a class="text-primary"  target="_blank">Event Management</a>.
       </p>
     </div>
     <script>
