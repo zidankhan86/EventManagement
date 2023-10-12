@@ -39,7 +39,7 @@
     <link id="sleek-css" rel="stylesheet" href="{{asset('admin/assets/css/sleek.css')}}" />
 
     <!-- FAVICON -->
-    <link href="assets/img/favicon.png" rel="shortcut icon" />
+    <link href="admin/assets/img/favicon.png" rel="shortcut icon" />
 
     <!--
       HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -118,42 +118,18 @@
     <script src="{{asset('admin/assets/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/simplebar/simplebar.min.js')}}"></script>
-
     <script src="{{asset('admin/assets/plugins/charts/Chart.min.js')}}"></script>
     <script src="{{asset('admin/assets/js/chart.js')}}"></script>
-
-
-
-
     <script src="{{asset('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js')}}"></script>
     <script src="{{asset('admin/assets/js/vector-map.js')}}"></script>
-
     <script src="{{asset('admin/assets/plugins/daterangepicker/moment.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/daterangepicker/daterangepicker.js')}}"></script>
     <script src="{{asset('admin/assets/js/date-range.js')}}"></script>
-
-
-
-
-
-
-
-
     <script src="{{asset('admin/assets/plugins/toastr/toastr.min.js')}}"></script>
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="{{asset('admin/assets/js/sleek.js')}}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/[@mdi/font](https://cdn.jsdelivr.net/npm/%40mdi/font)@6.x.x/css/materialdesignicons.min.css">
+
 
 </body>
 </html>
