@@ -48,13 +48,13 @@
                     <ul class="collapse " id="icons" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="material-icon.html">
+                          <a class="sidenav-item-link" href="{{ url('/eventCategory/from') }}">
                             <span class="nav-text">Add Category</span>
                           </a>
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="flag-icon.html">
+                          <a class="sidenav-item-link" href="{{ url('/eventCategory/mapping/form') }}">
                             <span class="nav-text">Add Mapping
                             </span>
                           </a>
