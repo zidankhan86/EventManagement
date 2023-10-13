@@ -140,7 +140,7 @@
                     <ul class="collapse " id="forms" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="basic-input.html">
+                          <a class="sidenav-item-link" href="{{ url('/event-promotion-from') }}">
                             <span class="nav-text">Add EventPromotion</span>
                           </a>
                         </li>
@@ -158,7 +158,7 @@
 
 
                   <li class="">
-                    <a class="sidenav-item-link" href="checkbox-radio.html">
+                    <a class="sidenav-item-link" href="{{ url('/attendee-from') }}">
                       <span class="nav-text"><i class="mdi mdi-account"></i>
                         Attendee</span>
                     </a>
@@ -257,7 +257,7 @@
                       <div class="sub-menu">
 
                         <li class="">
-                          <a class="sidenav-item-link" href="#">
+                          <a class="sidenav-item-link" href="{{ url('/user-from') }}">
                             <span class="nav-text">Add User</span>
                           </a>
                         </li>
