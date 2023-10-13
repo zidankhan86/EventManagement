@@ -107,7 +107,7 @@
                     <ul class="collapse " id="tables" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="basic-tables.html">
+                          <a class="sidenav-item-link" href="{{ url('/schedule-from') }}">
                             <span class="nav-text">Add Schedule</span>
                           </a>
                         </li>
@@ -124,7 +124,7 @@
                   </li>
 
                   <li class="">
-                    <a class="sidenav-item-link" href="#">
+                    <a class="sidenav-item-link" href="{{ url('/event-organizer-from') }}">
                       <span class="nav-text"><i class="mdi mdi-account-group"></i>Event Organizer </span>
                     </a>
                   </li>
