@@ -81,7 +81,7 @@
                     <ul class="collapse " id="app" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="chat.html">
+                          <a class="sidenav-item-link" href="{{ url('/event-from') }}">
                             <span class="nav-text">Add Event</span>
                           </a>
                         </li>
