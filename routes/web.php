@@ -33,3 +33,9 @@ Route::get('/event-promotion-from',[EventOrganizerController::class,'EventPromot
 Route::get('/schedule-from',[ScheduleController::class,'scheduleForm']);
 Route::get('/attendee-from',[AttendeeController::class,'attendeeForm']);
 Route::get('/user-from',[UserController::class,'userForm']);
+
+//Lists
+
+//Post Method
+Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
+
