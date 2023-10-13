@@ -19,7 +19,7 @@
                     </g>
                   </svg>
 
-                  <span class="brand-name text-truncate"> Dashboard</span>
+                  <span class="brand-name text-truncate"> <small>EVENT MANAGEMENT</small> </span>
                 </a>
               </div>
 
@@ -28,7 +28,7 @@
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-inner" id="sidebar-menu">
                   <li class="has-sub active expand">
-                    <a class="sidenav-item-link" href="" data-toggle="collapse" data-target="#dashboard"
+                    <a class="sidenav-item-link" href="{{ url('/') }}"  data-target="#dashboard"
                       aria-expanded="false" aria-controls="dashboard">
                       <i class="mdi mdi-view-dashboard-outline"></i>
                       <span class="nav-text">Dashboard</span>
