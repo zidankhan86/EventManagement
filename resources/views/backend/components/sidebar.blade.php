@@ -257,7 +257,7 @@
                       <div class="sub-menu">
 
                         <li class="">
-                          <a class="sidenav-item-link" href="#">
+                          <a class="sidenav-item-link" href="{{ url('/user-from') }}">
                             <span class="nav-text">Add User</span>
                           </a>
                         </li>

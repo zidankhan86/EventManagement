@@ -7,6 +7,7 @@ use App\Http\Controllers\EventOrganizerController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,4 @@ Route::get('/event-organizer-from',[EventOrganizerController::class,'EventOraniz
 Route::get('/event-promotion-from',[EventOrganizerController::class,'EventPromotionForm']);
 Route::get('/schedule-from',[ScheduleController::class,'scheduleForm']);
 Route::get('/attendee-from',[AttendeeController::class,'attendeeForm']);
+Route::get('/user-from',[UserController::class,'userForm']);
