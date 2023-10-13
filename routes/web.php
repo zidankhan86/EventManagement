@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AttendeeController;
 use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventOrganizerController;
@@ -27,4 +28,6 @@ Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);
 Route::get('/eventCategory/mapping/form',[EventCategoryController::class,'EventCategoryMappingForm']);
 Route::get('/event-organizer-from',[EventOrganizerController::class,'EventOranizerForm']);
+Route::get('/event-promotion-from',[EventOrganizerController::class,'EventPromotionForm']);
 Route::get('/schedule-from',[ScheduleController::class,'scheduleForm']);
+Route::get('/attendee-from',[AttendeeController::class,'attendeeForm']);
