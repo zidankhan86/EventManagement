@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+//pages
 Route::get('/',[HomeController::class,'home']);
 Route::get('/event-from',[EventController::class,'EventForm']);
+Route::get('/ticket-from',[TicketController::class,'TicketForm']);
