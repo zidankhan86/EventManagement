@@ -48,13 +48,13 @@
                     <ul class="collapse " id="icons" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="material-icon.html">
+                          <a class="sidenav-item-link" href="{{ url('/eventCategory/from') }}">
                             <span class="nav-text">Add Category</span>
                           </a>
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="flag-icon.html">
+                          <a class="sidenav-item-link" href="{{ url('/eventCategory/mapping/form') }}">
                             <span class="nav-text">Add Mapping
                             </span>
                           </a>
@@ -81,7 +81,7 @@
                     <ul class="collapse " id="app" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="chat.html">
+                          <a class="sidenav-item-link" href="{{ url('/event-from') }}">
                             <span class="nav-text">Add Event</span>
                           </a>
                         </li>
@@ -170,12 +170,11 @@
                       <i class="mdi mdi-ticket"></i>
                       <span class="nav-text">Tickets</span> <b class="caret"></b>
                     </a>
-
                     <ul class="collapse " id="components" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="alert.html">
-                            <span class="nav-text"><i class="mdi mdi-ticket"></i>
+                          <a class="sidenav-item-link" href="{{ url('/ticket-from') }}">
+                            <span class="nav-text">
                                 Add Ticket</span>
                           </a>
                         </li>
