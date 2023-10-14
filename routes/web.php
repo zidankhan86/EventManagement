@@ -41,3 +41,4 @@ Route::post('/eventCategory/create',[EventCategoryController::class,'EventCatego
 Route::post('/event-create',[EventController::class,'EventCreate']);
 Route::post('/eventCategory/mapping/store',[EventCategoryController::class,'EventCategoryMappingStore']);
 Route::post('/event-promotion-store',[EventOrganizerController::class,'EventPromotionStore']);
+Route::post('/schedule-create',[ScheduleController::class,'scheduleCreate']);
