@@ -106,7 +106,6 @@
     <!-- Javascript -->
     <!-- Ajax -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="{{asset('admin/assets/plugins/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('admin/assets/plugins/simplebar/simplebar.min.js')}}"></script>
