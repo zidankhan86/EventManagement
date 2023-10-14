@@ -28,8 +28,6 @@
             </div>
           </div>
 
-
-
           <div class="text-center">
             <a href="" class="btn btn-dark">Create Ticket</a>
           </div>

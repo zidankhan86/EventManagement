@@ -38,4 +38,4 @@ Route::get('/user-from',[UserController::class,'userForm']);
 
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
-
+Route::post('/event-create',[EventController::class,'EventCreate']);
