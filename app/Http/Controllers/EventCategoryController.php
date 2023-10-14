@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CategoryMapping;
+use App\Models\Event;
 use App\Models\EventCategory;
 use Illuminate\Http\Request;
 
@@ -12,7 +14,9 @@ class EventCategoryController extends Controller
   }
 
   public function EventCategoryMappingForm(){
-    return view('backend.pages.eventCategoryMappingForm');
+    $events = Event::all();
+    $categories = EventCategory::all();
+    return view('backend.pages.eventCategoryMappingForm',compact('events','categories'));
   }
 
 
@@ -38,4 +42,31 @@ class EventCategoryController extends Controller
           ], 400); // 400 indicates "Bad Request" status
       }
   }
+
+  public function EventCategoryMappingStore(Request $request){
+    try {
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'event_id' => 'required',
+            'category_id' => 'required',
+        ]);
+
+        // Create the category mapping using the validated data
+        $categoryMapping = CategoryMapping::create($validatedData);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Category mapping created successfully!',
+            'category_mapping' => $categoryMapping, // Return the correct object
+        ], 201);
+    } catch (\Exception $e) {
+        return response()->json([
+            'success' => false,
+            'message' => 'Something went wrong',
+            'error' => $e->getMessage(), // Optional
+        ], 500); // Use the 500 status code for a server error
+    }
 }
+
+}
+

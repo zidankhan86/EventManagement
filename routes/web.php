@@ -39,3 +39,5 @@ Route::get('/user-from',[UserController::class,'userForm']);
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
 Route::post('/event-create',[EventController::class,'EventCreate']);
+Route::post('/eventCategory/mapping/store',[EventCategoryController::class,'EventCategoryMappingStore']);
+Route::post('/event-promotion-store',[EventOrganizerController::class,'EventPromotionStore']);
