@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->longText('description');
+            $table->unsignedBigInteger('event_id');
+            $table->foreign('event_id')->references('id')->on('events')
+            ->restrictOnDelete();
+            $table->date('date');
+            $table->time('time');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
