@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->string('event_name');
+            $table->longText('description');
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->string('location');
+            $table->string('registration_deadline');
+            $table->boolean('is_published');
+            $table->unsignedBigInteger('category_id');
+
+            $table->foreign('category_id')->references('id')->on('event_categories')
+            ->restrictOnDelete()
+            ->restrictOnUpdate();;
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

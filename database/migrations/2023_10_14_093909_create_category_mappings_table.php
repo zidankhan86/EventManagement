@@ -11,18 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tickets', function (Blueprint $table) {
+        Schema::create('category_mappings', function (Blueprint $table) {
             $table->id();
-            $table->string('ticket_name');
-            $table->string('price');
-            $table->string('quantity');
             $table->unsignedBigInteger('event_id');
+            $table->unsignedBigInteger('category_id');
 
-            $table->foreign('event_id')->references('id')
-            ->on('events')
-            ->restrictOnDelete();
+            $table->foreign('event_id')->references('id')->on('events');
+            $table->foreign('category_id')->references('id')->on('event_categories');
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+            $table->timestamp('update_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tickets');
+        Schema::dropIfExists('category_mappings');
     }
 };

@@ -180,7 +180,7 @@
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="badge.html">
+                          <a class="sidenav-item-link" href="#">
                             <span class="nav-text">Ticket List</span>
                           </a>
                         </li>

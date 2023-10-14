@@ -19,7 +19,7 @@ class EventCategoryController extends Controller
   public function EventCategoryCreate(Request $request)
   {
       try {
-          // Create the event category
+
           EventCategory::create([
               "category_name" => $request->category_name
           ]);
