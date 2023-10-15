@@ -5,13 +5,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <style>
     .register{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #14131b, #00c6ff);
     margin-top: 3%;
     padding: 3%;
 }
 .register-left{
     text-align: center;
-    color: #fff;
+    color: #5ce485;
     margin-top: 4%;
 }
 .register-left input{
@@ -19,15 +19,15 @@
     border-radius: 1.5rem;
     padding: 2%;
     width: 60%;
-    background: #f8f9fa;
+    background: #171a1d;
     font-weight: bold;
-    color: #383d41;
+    color: #1784d1;
     margin-top: 30%;
     margin-bottom: 3%;
     cursor: pointer;
 }
 .register-right{
-    background: #f8f9fa;
+    background: #232b57;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
 }
@@ -61,7 +61,7 @@
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    background: #0062cc;
+    background: #c6c90c;
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -79,7 +79,7 @@
     padding: 2%;
     height: 34px;
     font-weight: 600;
-    color: #fff;
+    color: #130606;
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
@@ -97,7 +97,7 @@
     text-align: center;
     margin-top: 8%;
     margin-bottom: -15%;
-    color: #495057;
+    color: #e2e7ec;
 }
 </style>
 <!------ Include the above in your HEAD tag ---------->
