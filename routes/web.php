@@ -5,6 +5,8 @@ use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventOrganizerController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
@@ -33,7 +35,8 @@ Route::get('/event-promotion-from',[EventOrganizerController::class,'EventPromot
 Route::get('/schedule-from',[ScheduleController::class,'scheduleForm']);
 Route::get('/attendee-from',[AttendeeController::class,'attendeeForm']);
 Route::get('/user-from',[UserController::class,'userForm']);
-
+Route::get('/user-role-form',[RoleController::class,'userRoleForm']);
+Route::get('/permission-form',[PermissionController::class,'permissionForm']);
 //Lists
 
 //Post Method
@@ -42,3 +45,4 @@ Route::post('/event-create',[EventController::class,'EventCreate']);
 Route::post('/eventCategory/mapping/store',[EventCategoryController::class,'EventCategoryMappingStore']);
 Route::post('/event-promotion-store',[EventOrganizerController::class,'EventPromotionStore']);
 Route::post('/schedule-create',[ScheduleController::class,'scheduleCreate']);
+Route::post('/permission-create',[PermissionController::class,'permissionCreate']);

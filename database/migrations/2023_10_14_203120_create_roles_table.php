@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreign('permission_id')->references('id')->on('permissions')
             ->restrictOnDelete();
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('update_at')->useCurrent()->useCurrentOnUpdate();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
