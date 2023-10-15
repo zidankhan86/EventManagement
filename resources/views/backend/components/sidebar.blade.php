@@ -239,6 +239,13 @@
                   </li>
 
                   <li class="">
+                    <a class="sidenav-item-link" href="{{ url('/permission-form') }}">
+                      <span class="nav-text"><i class="mdi mdi-key"></i>
+                     Permission</span>
+                    </a>
+                  </li>
+
+                  <li class="">
                     <a class="sidenav-item-link" href="checkbox-radio.html">
                       <span class="nav-text"><i class="mdi mdi-key"></i>
                         User Role</span>
