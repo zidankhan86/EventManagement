@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AttendeeController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventOrganizerController;
@@ -27,8 +28,11 @@ use Illuminate\Support\Facades\Route;
 //Frontend
 
 Route::get('/',[HomeController::class,'website']);
+//Auth
+Route::get('/registration',[AuthController::class,'registration']);
+Route::post('/register',[AuthController::class,'register']);
 //pages
-Route::get('/admin',[HomeController::class,'home']);
+Route::get('/app',[HomeController::class,'home']);
 Route::get('/event-from',[EventController::class,'EventForm']);
 Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);
