@@ -87,7 +87,7 @@
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="contacts.html">
+                          <a class="sidenav-item-link" href="{{ url('/event-list') }}">
                             <span class="nav-text">Event List</span>
                           </a>
                         </li>
