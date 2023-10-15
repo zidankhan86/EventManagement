@@ -24,8 +24,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+//Frontend
+
+Route::get('/',[HomeController::class,'website']);
 //pages
-Route::get('/',[HomeController::class,'home']);
+Route::get('/admin',[HomeController::class,'home']);
 Route::get('/event-from',[EventController::class,'EventForm']);
 Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);
