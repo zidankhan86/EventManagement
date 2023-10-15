@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 //Frontend
 
-Route::get('/',[HomeController::class,'website']);
+//Route::get('/',[HomeController::class,'website']);
 //pages
 Route::get('/admin',[HomeController::class,'home']);
 Route::get('/event-from',[EventController::class,'EventForm']);
@@ -42,6 +42,8 @@ Route::get('/user-role-form',[RoleController::class,'userRoleForm']);
 Route::get('/permission-form',[PermissionController::class,'permissionForm']);
 //Lists
 Route::get('/event-list',[EventController::class,'EventList']);
+Route::get('/schedule-list',[EventController::class,'ScheduleList']);
+
 
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
