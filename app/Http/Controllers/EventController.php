@@ -45,4 +45,8 @@ class EventController extends Controller
         ], 500); // Use 500 status code for server error
     }
 }
+
+public function EventList(){
+    return view('backend.pages.eventList');
+}
 }

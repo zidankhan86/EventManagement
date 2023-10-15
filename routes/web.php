@@ -38,6 +38,7 @@ Route::get('/user-from',[UserController::class,'userForm']);
 Route::get('/user-role-form',[RoleController::class,'userRoleForm']);
 Route::get('/permission-form',[PermissionController::class,'permissionForm']);
 //Lists
+Route::get('/event-list',[EventController::class,'EventList']);
 
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
