@@ -7,6 +7,7 @@ use App\Models\EventCategory;
 use App\Models\EventPromotion;
 use App\Models\Schedule;
 use App\Models\Ticket;
+use App\Models\User;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\TryCatch;
 
@@ -80,7 +81,9 @@ public function ticketList(){
 }
 
 public function userList(){
-    return view('backend.pages.userList');
+    $users= User::all();
+   
+    return view('backend.pages.userList',compact('users'));
 
 }
 
