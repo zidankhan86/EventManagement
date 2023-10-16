@@ -71,14 +71,14 @@
                         let response = await axios.post('/event-promotion-store', data);
 
                         if (response.status === 201) {
-                            toastr.success('Event Promotion created successfully', 'Success');
+                            toastr.success('EventPromotion created successfully');
                             eventPromotionForm.reset();
                         } else {
-                            toastr.error('Failed', 'Success');
+                            toastr.error('Failed');
                         }
                     } catch (error) {
                         console.error(error);
-                        toastr.error('Failed', 'Success');
+                        toastr.error('Failed');
                     }
                 }
             });
