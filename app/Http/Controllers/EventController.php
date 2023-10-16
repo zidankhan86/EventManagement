@@ -51,7 +51,8 @@ public function mappingList(){
     
 }
 public function EventList(){
-    return view('backend.pages.eventList');
+    $events = Event::all();
+    return view('backend.pages.eventList',compact('events'));
 }
 
 public function ScheduleList(){
