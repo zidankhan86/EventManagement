@@ -28,12 +28,18 @@ use Illuminate\Support\Facades\Route;
 
 //Frontend
 
-Route::get('/',[FrontendHomeController::class,'website']);
+Route::get('/',[FrontendHomeController::class,'website'])->name('website');
 //Auth
 Route::get('/registration',[AuthController::class,'registration']);
 Route::post('/register',[AuthController::class,'register']);
+Route::get('/login',[AuthController::class,'login'])->name('login');
+Route::post('/login-process',[AuthController::class,'loginProcess']);
+Route::get('/logout',[AuthController::class,'logout']);
+//Backend
+
+Route::group(['middleware'=>'auth','prefix'=>'app'],function(){
 //pages
-Route::get('/app',[HomeController::class,'home']);
+Route::get('/',[HomeController::class,'home'])->name('dashboard');
 Route::get('/event-from',[EventController::class,'EventForm']);
 Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);
@@ -68,3 +74,6 @@ Route::post('/permission-create',[PermissionController::class,'permissionCreate'
 Route::post('/ticket-store',[TicketController::class,'TicketStore']);
 Route::post('/attendee-store',[AttendeeController::class,'AttendeeStore']);
 Route::post('/user-role-store',[RoleController::class,'userRoleStore']);
+});
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+    <link rel="stylesheet" href="{{asset ('frontend/style.css') }}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="sign-in-full-div">
+    <div class="sign-in-img">
+    <img src="https://i.ibb.co/wBcgp0c/unsplash-EVgs-Ab-L51-Rk.png" alt="unsplash-EVgs-Ab-L51-Rk" border="0">
+    </div>
+
+    <div class="sign-in-bg-text-div">
+        <div class="sign-in-bg-text-1">Hello Friend</div>
+        <div class="sign-in-bg-text-2">To keep connected with us provide us with your information </div>
+        <div class="sign-in-bg-button-div">
+            <a href="{{ url('/registration') }}" class="sign-in-bg-button">Signup</a>
+        </div>
+    </div>
+
+    <div class="sign-in-form-div">
+          <div class="sign-in-text-1"><span class="sign-in-text-2">Event</span><span class="sign-in-text-3"> Hive</span></div>
+              <div class="sign-in-text-4">Sign In to Event Hive</div>
+        <form class="sign-in-form" action="{{ url('/login-process') }}" method="post">
+            @csrf
+<!--.......................................................-->
+            <div class="sign-in-field-1">
+                <label class="sign-in-text-mail">YOUR EMAIL</label>
+                <div class="sign-in-input-div">
+                    <label>
+                        <input class="sign-in-input-field" name="email" type="email" placeholder="Enter your email">
+                    </label>
+                    @error('email')
+                    <p class="text-danger">{{ $message }}</p>
+                    @enderror
+                </div>
+
+            </div>
+<!--...................................................................-->
+            <div class="sign-in-field-1">
+                <label class="sign-in-text-mail">YOUR PASSWORD</label>
+                <div class="sign-in-input-div">
+                    <label>
+                        <input class="sign-in-input-field" name="password" type="password" placeholder="Enter your password">
+                    </label>
+                </div>
+            </div>
+<!--.........................................-->
+            <button class="sign-in-button" type="submit">Sign In</button>
+            <button class="sign-in-forgot-button" type="submit">Forgot your password?</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
