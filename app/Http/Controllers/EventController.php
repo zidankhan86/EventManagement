@@ -6,6 +6,7 @@ use App\Models\Event;
 use App\Models\EventCategory;
 use App\Models\EventPromotion;
 use App\Models\Schedule;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\TryCatch;
 
@@ -72,7 +73,9 @@ public function eventPromotionList(){
 }
 
 public function ticketList(){
-    return view('backend.pages.ticketList');
+    $tickets = Ticket::all();
+    $event = Event::with('EventTicket')->where('event_name');
+    return view('backend.pages.ticketList',compact('tickets'));
 
 }
 
