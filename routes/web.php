@@ -44,8 +44,16 @@ Route::get('/user-from',[UserController::class,'userForm']);
 Route::get('/user-role-form',[RoleController::class,'userRoleForm']);
 Route::get('/permission-form',[PermissionController::class,'permissionForm']);
 //Lists
+Route::get('/mapping-list',[EventController::class,'mappingList']);
 Route::get('/event-list',[EventController::class,'EventList']);
 Route::get('/schedule-list',[EventController::class,'ScheduleList']);
+Route::get('/eventPromotion-list',[EventController::class,'eventPromotionList']);
+Route::get('/ticket-list',[EventController::class,'ticketList']);
+Route::get('/user-list',[EventController::class,'userList']);
+
+
+
+
 
 
 //Post Method

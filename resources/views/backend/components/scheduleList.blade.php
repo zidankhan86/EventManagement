@@ -2,10 +2,13 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Sl</th>
+        <th scope="col">Event Name</th>
+        <th scope="col">Schedule Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+
       </tr>
     </thead>
     <tbody>
@@ -14,18 +17,17 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
+        <td>Otto</td>
+        <td>Otto</td>
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
       </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
+     
     </tbody>
   </table>

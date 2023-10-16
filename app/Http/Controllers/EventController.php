@@ -46,11 +46,30 @@ class EventController extends Controller
     }
 }
 
+public function mappingList(){
+    return view('backend.pages.mappingList');
+    
+}
 public function EventList(){
     return view('backend.pages.eventList');
 }
 
 public function ScheduleList(){
     return view('backend.pages.scheduleList');
+}
+
+public function eventPromotionList(){
+    return view('backend.pages.eventPromotionList');
+
+}
+
+public function ticketList(){
+    return view('backend.pages.ticketList');
+
+}
+
+public function userList(){
+    return view('backend.pages.userList');
+
 }
 }

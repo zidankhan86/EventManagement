@@ -1,13 +1,12 @@
-<h1 style="text-align: center">Event List</h1> <br><br>
+<h1 style="text-align: center">Ticket List</h1> <br><br>
 <table class="table">
     <thead>
       <tr>
         <th scope="col">Sl</th>
         <th scope="col">Event Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Location</th>
-        <th scope="col">Start Date</th>
-        <th scope="col">Deadline</th>
+        <th scope="col">Ticket Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Available Quantity</th>
       </tr>
     </thead>
     <tbody>
@@ -17,7 +16,6 @@
         <td>Otto</td>
         <td>@mdo</td>
         <td>Otto</td>
-        <td>@mdo</td>
       </tr>
       <tr>
         <th scope="row">2</th>
@@ -25,7 +23,6 @@
         <td>Thornton</td>
         <td>@fat</td>
         <td>Otto</td>
-        <td>@mdo</td>
       </tr>
     
     </tbody>
