@@ -49,4 +49,8 @@ class EventController extends Controller
 public function EventList(){
     return view('backend.pages.eventList');
 }
+
+public function ScheduleList(){
+    return view('backend.pages.scheduleList');
+}
 }
