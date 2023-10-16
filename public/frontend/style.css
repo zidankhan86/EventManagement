@@ -1,13 +1,19 @@
-                                            /*navbar*/
-.nav-body{
-    width: 1440px;
+      /*navbar*/
+      .parent-container {
+                                                /* Your existing styles for the parent container */
+         padding: 0 120px; /* Reduce 60px from both sides (adjust as needed) */
+     }
+
+     .nav-body {
+     width: 1220px; /* Reduce the width from both sides (subtract 60px from each side) */
     height: 92px;
-    align-items: center;
     display: inline-flex;
     background: #dbe6ff;
     border-radius: 10px;
     position: relative;
-}
+    margin: 0 120px;
+                                            }
+
 .nav-event-text{
     color: black;
     font-size: 40px;
@@ -25,7 +31,7 @@
 .nav-all-list{
     justify-content: flex-end;
     align-items: center;
-    gap: 44px;
+    gap: 15px;
     display: flex;
 }
 .nav-list{
@@ -40,14 +46,14 @@ a.nav-list:hover{
 }
 .nav-login{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Product Sans, serif;
     font-weight: 400;
     word-wrap: break-word;
 }
 .nav-button-background{
     padding: 10px 20px;
-    background: #7848F4;
+    background: #251944;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -57,7 +63,7 @@ a.nav-list:hover{
 .nav-signup{
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Product Sans, serif;
     font-weight: 400;
     word-wrap: break-word;

@@ -119,7 +119,7 @@
     <div class="card-img-group-1">
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?cs=srgb&dl=pexels-wolfgang-2747449.jpg&fm=jpg" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -130,7 +130,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://media.istockphoto.com/id/974238866/photo/audience-listens-to-the-lecturer-at-the-conference.jpg?b=1&s=612x612&w=0&k=20&c=30ObUe-ob67ZNhiilw-qGR2j1Vi5oXBHhBc6VHtyEvo=" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -141,7 +141,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240"  alt=""/>
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000"  alt=""/>
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -156,7 +156,7 @@
     <div class="card-img-group-2">
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240"  alt=""/>
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000"  alt=""/>
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -167,7 +167,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -178,7 +178,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img alt="" class="card-img" src="https://via.placeholder.com/347x240"/>
+          <img alt="" class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000"/>
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -190,7 +190,7 @@
     </div>
     <div class="make-event-div">
       <div class="make-event-bg"></div>
-      <img class="make-event-img" src="https://via.placeholder.com/545x303" />
+      <img class="make-event-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
       <div class="make-event-sp-1">
         <div class="make-event-sp-2">
           <div class="make-event-bg-2"></div>
@@ -238,31 +238,35 @@
         </div>
 
         <div class="trending-card">
-          <div class="trending-card-img">
-            <div class="trending-card-rating-bg">
-              <div class="space-6">
-                <div class="trending-card-rating-box"></div>
+            <div class="trending-card-img">
+              <img src="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?cs=srgb&dl=pexels-teddy-yang-2263436.jpg&fm=jpg" alt="Image Description">
+              <div class="trending-card-rating-bg">
+                <div class="space-6">
+                  <div class="trending-card-rating-box"></div>
+                </div>
+                <div class="trending-card-rating-text">4.8</div>
               </div>
-              <div class="trending-card-rating-text">4.8</div>
+              <div class="exclusive-text-div">
+                <div class="exclusive-text">EXCLUSIVE</div>
+              </div>
             </div>
-            <div class="exclusive-text-div">
-              <div class="exclusive-text">EXCLUSIVE</div>
+            <div class="university-text-div">
+              <div class="university-text">Stanford University</div>
             </div>
-          </div>
-          <div class="university-text-div">
-            <div class="university-text">Stanford University</div>
-          </div>
-          <div class="trending-footer">
-            <div class="university-location">Stanford, California</div>
-            <div class="trending-3dot-bg">
-              <div class="trending-3dots">
+            <div class="trending-footer">
+              <div class="university-location">Stanford, California</div>
+              <div class="trending-3dot-bg">
+                <div class="trending-3dots">
                   <div class="dot-1"></div>
                   <div class="dot-2"></div>
                   <div class="dot-3"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+
+
         <div class="trending-card">
           <div class="trending-card-img">
             <div class="trending-card-rating-bg">
@@ -297,16 +301,16 @@
       <div class="brands-sub-text">We've had the pleasure of working with industry-defining brands. These are just some of them.</div>
       <div class="brands-img-div">
         <div class="brands-img-sub-div">
-          <img class="brands-img-1" src="https://via.placeholder.com/179x54" />
-          <img class="brands-img-2" src="https://via.placeholder.com/162x49" />
+          <img class="brands-img-1" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+          <img class="brands-img-2" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
         </div>
-        <img class="brands-img-3" src="https://via.placeholder.com/142x63" />
-        <img class="brands-img-4" src="https://via.placeholder.com/227x131" />
-        <img class="brands-img-5" src="https://via.placeholder.com/182x39" />
-        <img class="brands-img-6" src="https://via.placeholder.com/297x124" />
-        <img class="brands-img-7" src="https://via.placeholder.com/295x83" />
-        <img class="brands-img-8" src="https://via.placeholder.com/134x44" />
-        <img class="brands-img-9" src="https://via.placeholder.com/145x52" />
+        <img class="brands-img-3" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-4" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-5" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-6" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-7" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-8" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
+        <img class="brands-img-9" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
       </div>
     </div>
 
@@ -314,7 +318,7 @@
     <div class="blog-div">
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -325,7 +329,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
@@ -336,7 +340,7 @@
       </div>
       <div class="card-img-background">
         <div class="card-img-div">
-          <img class="card-img" src="https://via.placeholder.com/347x240" />
+          <img class="card-img" src="https://img.freepik.com/premium-photo/crowd-people-dark-room-with-blue-lights-shining-down_889227-20045.jpg?w=2000" />
         </div>
         <div class="free-text-div">
           <div class="free-text">FREE</div>
