@@ -28,7 +28,7 @@
                 <!-- sidebar menu -->
                 <ul class="nav sidebar-inner" id="sidebar-menu">
                   <li class="has-sub active expand">
-                    <a class="sidenav-item-link" href="{{ url('/app') }}"  data-target="#dashboard"
+                    <a class="sidenav-item-link" href="{{ route('dashboard') }}"  data-target="#dashboard"
                       aria-expanded="false" aria-controls="dashboard">
                       <i class="mdi mdi-view-dashboard-outline"></i>
                       <span class="nav-text">Dashboard</span>
@@ -101,7 +101,7 @@
                       aria-expanded="false" aria-controls="tables">
                       <i class="mdi mdi-table"></i>
                       <span class="nav-text">Schedule
-                      </span> 
+                      </span>
                     </a>
                   </li>
 
@@ -116,10 +116,10 @@
                       aria-expanded="false" aria-controls="forms">
                       <i class="mdi mdi-gift"></i>
                       <span class="nav-text">EventPromotion
-                      </span> 
+                      </span>
                     </a>
 
-                    
+
                   </li>
 
 

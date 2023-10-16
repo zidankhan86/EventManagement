@@ -469,7 +469,7 @@
               <!-- User image -->
               <li class="dropdown-header">
                 <div class="d-inline-block">
-                  Profile <small class="pt-1">iamabdus@gmail.com</small>
+                  {{ auth()->user()->name }} <small class="pt-1">iamabdus@gmail.com</small>
                 </div>
               </li>
 
@@ -491,7 +491,7 @@
               </li>
 
               <li class="dropdown-footer">
-                <a href="index.html"> <i class="mdi mdi-logout"></i> Log Out </a>
+                <a href="{{ url('/logout') }}"> <i class="mdi mdi-logout"></i> Log Out </a>
               </li>
             </ul>
           </li>
