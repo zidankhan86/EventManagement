@@ -60,3 +60,4 @@ Route::post('/event-promotion-store',[EventOrganizerController::class,'EventProm
 Route::post('/schedule-create',[ScheduleController::class,'scheduleCreate']);
 Route::post('/permission-create',[PermissionController::class,'permissionCreate']);
 Route::post('/ticket-store',[TicketController::class,'TicketStore']);
+Route::post('/attendee-store',[AttendeeController::class,'AttendeeStore']);
