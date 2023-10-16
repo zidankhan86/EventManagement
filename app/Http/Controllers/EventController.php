@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\EventCategory;
+use App\Models\EventPromotion;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\TryCatch;
@@ -63,7 +64,10 @@ public function ScheduleList(){
 }
 
 public function eventPromotionList(){
-    return view('backend.pages.eventPromotionList');
+
+    $promotions = EventPromotion::all();
+    $events = Event::with('EventPromotion')->where('event_name');
+    return view('backend.pages.eventPromotionList',compact('promotions'));
 
 }
 

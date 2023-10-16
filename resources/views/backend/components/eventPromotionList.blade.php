@@ -48,6 +48,7 @@ h1 {
 }
 
 </style>
+<div class="container">
 <table class="table">
     <thead>
       <tr>
@@ -56,16 +57,26 @@ h1 {
         <th scope="col">Promotion Type</th>
         <th scope="col">Message</th>
         <th scope="col"> Date</th>
+        <th scope="col"> Action</th>
       </tr>
     </thead>
     <tbody>
+
+        @foreach ($promotions as $promotion)
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
+        <th scope="row">{{ $promotion->id }}</th>
+        <td>{{ $promotion->EventPromotion->event_name }}</td>
+        <td>{{ $promotion->type }}</td>
+        <td>{{ $promotion->message }}</td>
+        <td>{{ $promotion->date }}</td>
+        <td><a href="" class="btn btn-info"><i class="fas fa-eidt"></i>Edit</a>
+            <a href="" class="btn btn-danger"><i class="fas fa-eidt"></i>Delete</a>
+            <a href="" class="btn btn-success"><i class="fas fa-eidt"></i>View</a>
+        </td>
+        
       </tr>
+      @endforeach
 
     </tbody>
   </table>
+</div>

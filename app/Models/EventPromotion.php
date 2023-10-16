@@ -16,7 +16,7 @@ class EventPromotion extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user(): BelongsTo
+    public function EventPromotion(): BelongsTo
     {
         return $this->belongsTo(Event::class, 'event_id', 'id');
     }
