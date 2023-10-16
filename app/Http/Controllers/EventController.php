@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\EventCategory;
+use App\Models\EventOrganizer;
+use App\Models\EventPromotion;
+use App\Models\Schedule;
+use App\Models\Ticket;
+use App\Models\User;
 use Illuminate\Http\Request;
 use PhpParser\Node\Stmt\TryCatch;
 
@@ -56,26 +61,35 @@ public function EventList(){
 }
 
 public function ScheduleList(){
-    return view('backend.pages.scheduleList');
+    $schedules = Schedule::all();
+    $events = Event::with('EventSchedule')->where('event_name');
+    return view('backend.pages.scheduleList',compact('schedules','events'));
 }
 
 public function eventPromotionList(){
-    return view('backend.pages.eventPromotionList');
+
+    $promotions = EventPromotion::all();
+    $events = Event::with('EventPromotion')->where('event_name');
+    return view('backend.pages.eventPromotionList',compact('promotions'));
 
 }
 
 public function ticketList(){
-    return view('backend.pages.ticketList');
+    $tickets = Ticket::all();
+    $event = Event::with('EventTicket')->where('event_name');
+    return view('backend.pages.ticketList',compact('tickets'));
 
 }
 
 public function userList(){
-    return view('backend.pages.userList');
+    $users= User::all();
+    return view('backend.pages.userList',compact('users'));
 
 }
 
 public function eventOrganistionList(){
-    return view('backend.pages.eventOrganistionList');
+    $organizer = EventOrganizer::all();
+    return view('backend.pages.eventOrganistionList',compact('organizer'));
     
 }
 

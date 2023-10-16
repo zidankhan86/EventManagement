@@ -59,16 +59,17 @@ h1 {
       </tr>
     </thead>
     <tbody>
+
+        @foreach ($organizer as $organize)
+            
+      
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+        <th scope="row">{{ $organize->id }}</th>
+        <td>{{ $organize->id }}</</td>
+        <td>{{ $organize->organiser_name }}</</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-      </tr>
+      @endforeach
+      
 
     </tbody>
   </table>

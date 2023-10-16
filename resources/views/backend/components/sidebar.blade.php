@@ -112,29 +112,14 @@
                   </li>
 
                   <li class="has-sub ">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#forms"
+                    <a class="sidenav-item-link" href="{{ url('/eventPromotion-list') }}"  data-target="#forms"
                       aria-expanded="false" aria-controls="forms">
                       <i class="mdi mdi-gift"></i>
                       <span class="nav-text">EventPromotion
-                      </span> <b class="caret"></b>
+                      </span> 
                     </a>
 
-                    <ul class="collapse " id="forms" data-parent="#sidebar-menu">
-                      <div class="sub-menu">
-                        <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/event-promotion-from') }}">
-                            <span class="nav-text">Add EventPromotion</span>
-                          </a>
-                        </li>
-
-                        <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/eventPromotion-list') }}">
-                            <span class="nav-text">EventPromotion List</span>
-                          </a>
-                        </li>
-
-                      </div>
-                    </ul>
+                    
                   </li>
 
 
