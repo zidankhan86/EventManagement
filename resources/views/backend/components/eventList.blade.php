@@ -5,7 +5,7 @@
     border-collapse: collapse;
     border-spacing: 0;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #faf6f6;
     font-size: 16px;
 }
 
@@ -25,12 +25,12 @@
 
 /* Style alternate rows with a different background color */
 .table tbody tr:nth-child(even) {
-    background-color: #0d3522;
+    background-color: #104e61;
 }
 
 /* Style the "Add Schedule" button */
 .btn-info {
-    background-color: #065534;
+    background-color: #12303b;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -46,34 +46,39 @@ h1 {
 </style>
 
 <h1 style="text-align: center">Event List</h1> <br><br>
+<div class="container">
 <table class="table">
     <thead>
       <tr>
         <th scope="col">Sl</th>
         <th scope="col">Event Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Location</th>
         <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Location</th>
         <th scope="col">Deadline</th>
+        <th scope="col">Status</th>
+        <th scope="col">Category</th>
       </tr>
     </thead>
     <tbody>
+     
+        @foreach ($events as $item)
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      
+        <th scope="row">{{ $item->id }}</th>
+        <td>{{ $item->event_name }}</td>
+        <td>{{ $item->start_date }}</td>
+        <td>{{ $item->end_date }}</td>
+        <td>{{ $item->location }}</td>
+        <td>{{ $item->registration_deadline }}</td>
+        <td>{{ $item->is_published == 1 ? 'Publish':'Unpublish' }}</td>
+        <td>{{ $item->category_id }}</td>
+        
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
+      @endforeach    
+      
+      
 
     </tbody>
   </table>
+</div>
