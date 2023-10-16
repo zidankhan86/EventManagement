@@ -64,22 +64,20 @@ h1 {
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>Otto</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
+
+        @foreach ($schedules as $schedule)
+        <tr>
+            <th scope="row">{{ $schedule->id }}</th>
+            <td>{{ $schedule->EventSchedule->event_name }}</td>
+            <td>{{ $schedule->title }}</td>
+            <td>{{ $schedule->description }}</td>
+            <td>{{ $schedule->date }}</td>
+            <td>{{ $schedule->time }}</td>
+            
+          </tr>
+        @endforeach
+      
+      
 
     </tbody>
   </table>
