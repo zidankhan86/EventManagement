@@ -59,3 +59,4 @@ Route::post('/eventCategory/mapping/store',[EventCategoryController::class,'Even
 Route::post('/event-promotion-store',[EventOrganizerController::class,'EventPromotionStore']);
 Route::post('/schedule-create',[ScheduleController::class,'scheduleCreate']);
 Route::post('/permission-create',[PermissionController::class,'permissionCreate']);
+Route::post('/ticket-store',[TicketController::class,'TicketStore']);

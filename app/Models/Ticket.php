@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Ticket extends Model
 {
     use HasFactory;
+    protected $guarded =[];
 
     /**
      * Get the user that owns the Ticket
