@@ -56,12 +56,6 @@ Route::get('/contactInfo-list',[EventController::class,'contactInfoList']);
 Route::get('/permission-list',[EventController::class,'permissionList']);
 Route::get('/usersRole-list',[EventController::class,'usersRoleList']);
 
-
-
-
-
-
-
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
 Route::post('/event-create',[EventController::class,'EventCreate']);
@@ -71,3 +65,4 @@ Route::post('/schedule-create',[ScheduleController::class,'scheduleCreate']);
 Route::post('/permission-create',[PermissionController::class,'permissionCreate']);
 Route::post('/ticket-store',[TicketController::class,'TicketStore']);
 Route::post('/attendee-store',[AttendeeController::class,'AttendeeStore']);
+Route::post('/user-role-store',[RoleController::class,'userRoleStore']);

@@ -205,7 +205,7 @@
                   </li>
 
                   <li class="">
-                    <a class="sidenav-item-link" href="checkbox-radio.html">
+                    <a class="sidenav-item-link" href="{{ url('/user-role-form') }}">
                       <span class="nav-text"><i class="mdi mdi-key"></i>
                         User Role</span>
                     </a>
