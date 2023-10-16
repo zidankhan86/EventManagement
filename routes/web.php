@@ -52,10 +52,6 @@ Route::get('/ticket-list',[EventController::class,'ticketList']);
 Route::get('/user-list',[EventController::class,'userList']);
 
 
-
-
-
-
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
 Route::post('/event-create',[EventController::class,'EventCreate']);

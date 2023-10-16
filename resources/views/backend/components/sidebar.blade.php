@@ -61,7 +61,7 @@
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="flag-icon.html">
+                          <a class="sidenav-item-link" href="{{ url('/mapping-list') }}">
                             <span class="nav-text">Mapping List
                             </span>
                           </a>
@@ -97,30 +97,12 @@
                   </li>
 
                   <li class="has-sub ">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#tables"
+                    <a class="sidenav-item-link" href="{{ url('/schedule-list') }}"  data-target="#tables"
                       aria-expanded="false" aria-controls="tables">
                       <i class="mdi mdi-table"></i>
                       <span class="nav-text">Schedule
-                      </span> <b class="caret"></b>
+                      </span> 
                     </a>
-
-                    <ul class="collapse " id="tables" data-parent="#sidebar-menu">
-                      <div class="sub-menu">
-                        <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/schedule-from') }}">
-                            <span class="nav-text">Add Schedule</span>
-                          </a>
-                        </li>
-
-                        <li class="">
-                          <a class="sidenav-item-link" href="basic-tables.html">
-                            <span class="nav-text">Schedule List</span>
-                          </a>
-                        </li>
-
-
-                      </div>
-                    </ul>
                   </li>
 
                   <li class="">
@@ -146,7 +128,7 @@
                         </li>
 
                         <li class="">
-                          <a class="sidenav-item-link" href="input-group.html">
+                          <a class="sidenav-item-link" href="{{ url('/eventPromotion-list') }}">
                             <span class="nav-text">EventPromotion List</span>
                           </a>
                         </li>
@@ -164,36 +146,13 @@
                     </a>
                   </li>
 
-                  <li class="has-sub ">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#components"
+                  <li class=" ">
+                    <a class="" href="{{ url('/ticket-list') }}" data-toggle="" data-target="#components"
                       aria-expanded="false" aria-controls="components">
                       <i class="mdi mdi-ticket"></i>
-                      <span class="nav-text">Tickets</span> <b class="caret"></b>
+                      <span class="nav-text">Tickets</span> <b class=""></b>
                     </a>
-                    <ul class="collapse " id="components" data-parent="#sidebar-menu">
-                      <div class="sub-menu">
-                        <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/ticket-from') }}">
-                            <span class="nav-text">
-                                Add Ticket</span>
-                          </a>
-                        </li>
-
-                        <li class="">
-                          <a class="sidenav-item-link" href="#">
-                            <span class="nav-text">Ticket List</span>
-                          </a>
-                        </li>
-
-                      </div>
-                    </ul>
                   </li>
-
-
-
-
-
-
 
                   <li class="has-sub ">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#maps"
@@ -253,35 +212,19 @@
                   </li>
 
 
-                  <li class="has-sub ">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#documentation"
+                  <li class=" ">
+                    <a class="sidenav-item-link" href="{{ url('/user-list') }}"  data-target="#documentation"
                       aria-expanded="false" aria-controls="documentation">
                       <i class="mdi mdi-account-multiple"></i>
-                      <span class="nav-text">Users</span> <b class="caret"></b>
+                      <span class="nav-text">Users</span>
                     </a>
 
-                    <ul class="collapse " id="documentation" data-parent="#sidebar-menu">
-                      <div class="sub-menu">
 
-                        <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/user-from') }}">
-                            <span class="nav-text">Add User</span>
-                          </a>
-                        </li>
-
-                        <li class="">
-                          <a class="sidenav-item-link" href="quick-start.html">
-                            <span class="nav-text">User List</span>
-                          </a>
-                        </li>
-
-                      </div>
-                    </ul>
                   </li>
 
-                  <!-- <li class="section-title">
+                  <li class="section-title">
                     Documentation
-                  </li> -->
+                  </li>
                 </ul>
               </div>
 
