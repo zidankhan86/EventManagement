@@ -72,4 +72,29 @@ public function userList(){
     return view('backend.pages.userList');
 
 }
+
+public function eventOrganistionList(){
+    return view('backend.pages.eventOrganistionList');
+    
+}
+
+public function attendeeList(){
+    return view('backend.pages.attendeeList');
+
+}
+
+public function contactInfoList(){
+    return view('backend.pages.contactInfoList');
+    
+}
+
+public function permissionList(){
+    return view('backend.pages.permissionList');
+
+}
+
+public function usersRoleList(){
+    return view('backend.pages.usersRoleList');
+
+}
 }

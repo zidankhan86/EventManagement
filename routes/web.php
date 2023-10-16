@@ -50,6 +50,16 @@ Route::get('/schedule-list',[EventController::class,'ScheduleList']);
 Route::get('/eventPromotion-list',[EventController::class,'eventPromotionList']);
 Route::get('/ticket-list',[EventController::class,'ticketList']);
 Route::get('/user-list',[EventController::class,'userList']);
+Route::get('/eventOrganistion-list',[EventController::class,'eventOrganistionList']);
+Route::get('/attendee-list',[EventController::class,'attendeeList']);
+Route::get('/contactInfo-list',[EventController::class,'contactInfoList']);
+Route::get('/permission-list',[EventController::class,'permissionList']);
+Route::get('/usersRole-list',[EventController::class,'usersRoleList']);
+
+
+
+
+
 
 
 //Post Method
