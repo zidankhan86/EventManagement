@@ -459,13 +459,11 @@
               </li>
             </ul>
           </li>
-          <li class="right-sidebar-in right-sidebar-2-menu">
-            <i class="mdi mdi-settings mdi-spin"></i>
-          </li>
+
           <!-- User Account -->
           <li class="dropdown user-menu">
             <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <span class="d-none d-lg-inline-block">Abdus Salam</span>
+              <span class="d-none d-lg-inline-block">PROFILE</span>
             </button>
             <ul class="dropdown-menu dropdown-menu-right">
               <!-- User image -->
