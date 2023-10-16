@@ -29,6 +29,10 @@ use Illuminate\Support\Facades\Route;
 //Frontend
 
 Route::get('/',[FrontendHomeController::class,'website']);
+Route::get('/event-page',[FrontendHomeController::class,'event']);
+Route::get('/allEvent-page',[FrontendHomeController::class,'allEvent']);
+Route::get('/college-page',[FrontendHomeController::class,'college']);
+Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
 //Auth
 Route::get('/registration',[AuthController::class,'registration']);
 Route::post('/register',[AuthController::class,'register']);
