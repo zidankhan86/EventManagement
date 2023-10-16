@@ -13,7 +13,7 @@
         </div>
 
         <div class="nav-button-background">
-            <div class="nav-signup">Signup</div>
+            <a href="{{ url('/registration') }}" class="nav-signup">Signup</a>
         </div>
 
     </div>

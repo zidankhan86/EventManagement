@@ -88,7 +88,7 @@
                         // Registration successful, redirect or display a success message
                         toastr.success('Registration successful');
                         document.getElementById('registration-form').reset();
-
+                        window.location.href = '/';
                     } else {
                         // Handle registration errors (e.g., validation errors)
                         toastr.error('Registration failed');
