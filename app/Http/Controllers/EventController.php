@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\EventCategory;
+use App\Models\EventOrganizer;
 use App\Models\EventPromotion;
 use App\Models\Schedule;
 use App\Models\Ticket;
@@ -82,13 +83,13 @@ public function ticketList(){
 
 public function userList(){
     $users= User::all();
-   
     return view('backend.pages.userList',compact('users'));
 
 }
 
 public function eventOrganistionList(){
-    return view('backend.pages.eventOrganistionList');
+    $organizer = EventOrganizer::all();
+    return view('backend.pages.eventOrganistionList',compact('organizer'));
     
 }
 

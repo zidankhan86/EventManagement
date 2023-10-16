@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventOrganizerController;
+use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RoleController;
@@ -26,7 +27,8 @@ use Illuminate\Support\Facades\Route;
 
 
 //Frontend
-Route::get('/',[HomeController::class,'website']);
+
+Route::get('/',[FrontendHomeController::class,'website']);
 //Auth
 Route::get('/registration',[AuthController::class,'registration']);
 Route::post('/register',[AuthController::class,'register']);
