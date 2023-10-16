@@ -46,6 +46,10 @@ h1 {
 </style>
 
 <h1 style="text-align: center">Permission List</h1> <br><br>
+
+<div style="text-align: right">
+    <a href="{{ url('/permission-form') }}" class="btn btn-info" style="margin-right: 10px;">+ Add Permission</a>
+</div><br><br>
 <table class="table">
     <thead>
       <tr>

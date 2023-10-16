@@ -46,6 +46,9 @@ h1 {
 </style>
 
 <h1 style="text-align: center">Attendee List</h1> <br><br>
+<div style="text-align: right">
+    <a href="{{ url('/attendee-from') }}" class="btn btn-info" style="margin-right: 10px;">+ Add Attendee</a>
+</div><br><br>
 <table class="table">
     <thead>
       <tr>

@@ -140,7 +140,7 @@
 
 
                   <li class="">
-                    <a class="sidenav-item-link" href="{{ url('/attendee-from') }}">
+                    <a class="sidenav-item-link" href="{{ url('/attendee-list') }}">
                       <span class="nav-text"><i class="mdi mdi-account"></i>
                         Attendee</span>
                     </a>
@@ -198,14 +198,14 @@
                   </li>
 
                   <li class="">
-                    <a class="sidenav-item-link" href="{{ url('/permission-form') }}">
+                    <a class="sidenav-item-link" href="{{ url('/permission-list') }}">
                       <span class="nav-text"><i class="mdi mdi-key"></i>
                      Permission</span>
                     </a>
                   </li>
 
                   <li class="">
-                    <a class="sidenav-item-link" href="{{ url('/user-role-form') }}">
+                    <a class="sidenav-item-link" href="{{ url('/usersRole-list') }}">
                       <span class="nav-text"><i class="mdi mdi-key"></i>
                         User Role</span>
                     </a>
