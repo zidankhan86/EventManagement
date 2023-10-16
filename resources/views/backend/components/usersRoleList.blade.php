@@ -46,6 +46,9 @@ h1 {
 </style>
 
 <h1 style="text-align: center">Role List</h1> <br><br>
+<div style="text-align: right">
+    <a href="{{ url('/user-role-form') }}" class="btn btn-info" style="margin-right: 10px;">+ Add Role</a>
+</div><br><br>
 <table class="table">
     <thead>
       <tr>
