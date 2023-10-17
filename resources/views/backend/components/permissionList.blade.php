@@ -10,17 +10,20 @@
       <tr>
         <th scope="col">Sl</th>
         <th scope="col">Permission Name</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <th scope="row">1</th>
         <td>Mark</td>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+        </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-      </tr>
+
 
     </tbody>
   </table>
