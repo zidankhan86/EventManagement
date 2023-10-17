@@ -45,9 +45,9 @@ Route::post('/login-process',[AuthController::class,'loginProcess']);
 Route::get('/logout',[AuthController::class,'logout']);
 //Backend
 
-Route::group(['middleware'=>'auth','prefix'=>'app'],function(){
+Route::group(['middleware'=>'auth'],function(){
 //pages
-Route::get('/',[HomeController::class,'home'])->name('dashboard');
+Route::get('/app',[HomeController::class,'home'])->name('dashboard');
 Route::get('/event-from',[EventController::class,'EventForm']);
 Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);

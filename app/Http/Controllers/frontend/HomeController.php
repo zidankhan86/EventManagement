@@ -11,7 +11,7 @@ class HomeController extends Controller
         return view('frontend.pages.home');
     }
     public function event(){
-        return view('frontend.pages.event');
+        return view('frontend.pages.events');
     }
     public function allEvent(){
         return view('frontend.pages.allEvent');
