@@ -10,6 +10,7 @@
         <th scope="col">Email</th>
         <th scope="col">Phone</th>
         <th scope="col">Status</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -20,15 +21,13 @@
         <td>@mdo</td>
         <td>Otto</td>
         <td>@mdo</td>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+        </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
+
 
     </tbody>
   </table>

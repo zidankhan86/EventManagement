@@ -17,7 +17,7 @@
                     <div class="col-xl-3 col-sm-6">
                       <div class="card card-mini mb-4">
                         <div class="card-body">
-                          <h2 class="mb-1">71,503</h2>
+                          <h2 class="mb-1">{{ $totalEvents }}</h2>
                           <p>Total Events</p>
 
                         </div>
@@ -27,7 +27,7 @@
                     <div class="col-xl-3 col-sm-6">
                       <div class="card card-mini  mb-4">
                         <div class="card-body">
-                          <h2 class="mb-1">9,503</h2>
+                          <h2 class="mb-1">{{ $totalUsers }}</h2>
                           <p>Total Register Customer</p>
                         </div>
                         <a href="" class="btn btn-dark">Details</a>

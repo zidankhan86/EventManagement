@@ -30,7 +30,9 @@
             <td>{{ $user->phone }}</td>
             <td>{{ $user->address }}</td>
             <td>
-                <a href="">Edit</a>
+                <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
             </td>
           </tr>
         @endforeach

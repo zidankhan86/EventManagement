@@ -24,9 +24,10 @@
         <td>{{ $promotion->type }}</td>
         <td>{{ $promotion->message }}</td>
         <td>{{ $promotion->date }}</td>
-        <td><a href="" class="btn btn-info"><i class="fas fa-eidt"></i>Edit</a>
-            <a href="" class="btn btn-danger"><i class="fas fa-eidt"></i>Delete</a>
-            <a href="" class="btn btn-success"><i class="fas fa-eidt"></i>View</a>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>
 
       </tr>

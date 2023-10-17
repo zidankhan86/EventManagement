@@ -11,6 +11,7 @@
         <th scope="col">Sl</th>
         <th scope="col">Event Name</th>
         <th scope="col">Organistion Name</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -22,6 +23,11 @@
         <th scope="row">{{ $organize->id }}</th>
         <td>{{ $organize->id }}</</td>
         <td>{{ $organize->organiser_name }}</</td>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+        </td>
       </tr>
       @endforeach
 
