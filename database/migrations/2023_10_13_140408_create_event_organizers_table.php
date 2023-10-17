@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('event_organizers', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('event_id');
+            $table->foreign('event_id')->references('id')->on('events');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
