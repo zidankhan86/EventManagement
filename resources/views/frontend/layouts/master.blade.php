@@ -10,23 +10,16 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 </head>
 
-<!--                               navbar-->
+<body>
 
 @include('frontend\components\header')
-                                      <!--end navbar-->
+
 
 @yield('content')
 
-    <div class="index-footer-gap">
-
-    </div>
-
-
-
-
-
-
  @include('frontend\components\footer')
+
+
+</body>
 </html>
 
-                       <!--end footer-->
