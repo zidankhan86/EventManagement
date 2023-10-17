@@ -43,6 +43,8 @@ class AuthController extends Controller
         return view('backend.auth.login');
     }
 
+    
+    //Login Process
     public function loginProcess(Request $request){
         $credential = $request->only(['email', 'password']);
 
