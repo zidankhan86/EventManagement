@@ -14,7 +14,7 @@
         <th scope="col">Description</th>
         <th scope="col">Date</th>
         <th scope="col">Time</th>
-
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -27,6 +27,11 @@
             <td>{{ $schedule->description }}</td>
             <td>{{ $schedule->date }}</td>
             <td>{{ $schedule->time }}</td>
+            <td>
+                <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+                <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+            </td>
 
           </tr>
         @endforeach
