@@ -60,7 +60,7 @@
 
 
 <div class="space-12">
-    <div class="space-13"><span class="card-text">card </span> <span class="up-event-text">Events</span></div>
+    <div class="space-13"><span class="card-text">Upcoming </span> <span class="up-event-text">Events</span></div>
 
     <div class="space-14">
         <div class="space-15">
