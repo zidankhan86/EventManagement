@@ -6,6 +6,7 @@
     <thead>
       <tr>
         <th scope="col">Sl</th>
+        <th scope="col">Image</th>
         <th scope="col">Event Name</th>
         <th scope="col">Start Date</th>
         <th scope="col">End Date</th>
@@ -19,7 +20,7 @@
 
         @foreach ($events as $item)
       <tr>
-
+        <th><img height="50" width="60" src="{{ url('/storage/uploads/',$item->image) }}" alt=""></th>
         <th scope="row">{{ $item->id }}</th>
         <td>{{ $item->event_name }}</td>
         <td>{{ $item->start_date }}</td>
