@@ -28,16 +28,26 @@ use Illuminate\Support\Facades\Route;
 
 //Frontend
 
+<<<<<<< HEAD
 Route::get('/',[FrontendHomeController::class,'website']);
 Route::get('/event-page',[FrontendHomeController::class,'event']);
 Route::get('/allEvent-page',[FrontendHomeController::class,'allEvent']);
 Route::get('/college-page',[FrontendHomeController::class,'college']);
 Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
+=======
+Route::get('/',[FrontendHomeController::class,'website'])->name('website');
+>>>>>>> bb93ef7baab3e61cc7acf349846f1b6ca6b05a28
 //Auth
 Route::get('/registration',[AuthController::class,'registration']);
 Route::post('/register',[AuthController::class,'register']);
+Route::get('/login',[AuthController::class,'login'])->name('login');
+Route::post('/login-process',[AuthController::class,'loginProcess']);
+Route::get('/logout',[AuthController::class,'logout']);
+//Backend
+
+Route::group(['middleware'=>'auth','prefix'=>'app'],function(){
 //pages
-Route::get('/app',[HomeController::class,'home']);
+Route::get('/',[HomeController::class,'home'])->name('dashboard');
 Route::get('/event-from',[EventController::class,'EventForm']);
 Route::get('/ticket-from',[TicketController::class,'TicketForm']);
 Route::get('/eventCategory/from',[EventCategoryController::class,'EventCategoryForm']);
@@ -72,3 +82,6 @@ Route::post('/permission-create',[PermissionController::class,'permissionCreate'
 Route::post('/ticket-store',[TicketController::class,'TicketStore']);
 Route::post('/attendee-store',[AttendeeController::class,'AttendeeStore']);
 Route::post('/user-role-store',[RoleController::class,'userRoleStore']);
+});
+
+
