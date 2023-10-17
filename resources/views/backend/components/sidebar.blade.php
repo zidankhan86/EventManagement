@@ -106,7 +106,7 @@
                   </li>
 
                   <li class="">
-                    <a class="sidenav-item-link" href="{{ url('/event-organizer-from') }}">
+                    <a class="sidenav-item-link" href="{{ url('/eventOrganistion-list') }}">
                       <span class="nav-text"><i class="mdi mdi-account-group"></i>Event Organizer </span>
                     </a>
                   </li>

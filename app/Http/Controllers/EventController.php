@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Attendee;
 use App\Models\Event;
 use App\Models\EventCategory;
 use App\Models\EventOrganizer;
 use App\Models\EventPromotion;
+use App\Models\Permission;
+use App\Models\Role;
 use App\Models\Schedule;
 use App\Models\Ticket;
 use App\Models\User;
@@ -102,12 +105,15 @@ public function userList(){
 
 public function eventOrganistionList(){
     $organizer = EventOrganizer::all();
+    User::with('user')->where('name');
+    Event::with('EventsOrganizer')->where('event_name');
     return view('backend.pages.eventOrganistionList',compact('organizer'));
 
 }
 
 public function attendeeList(){
-    return view('backend.pages.attendeeList');
+    $attendee = Attendee::all();
+    return view('backend.pages.attendeeList',compact('attendee'));
 
 }
 
@@ -117,12 +123,16 @@ public function contactInfoList(){
 }
 
 public function permissionList(){
-    return view('backend.pages.permissionList');
+    $permissions = Permission::all();
+    return view('backend.pages.permissionList',compact('permissions'));
 
 }
 
 public function usersRoleList(){
-    return view('backend.pages.usersRoleList');
+    $roles = Role::all();
+    User::with('user')->where('name');
+    User::with('Permission')->where('type');
+    return view('backend.pages.usersRoleList',compact('roles'));
 
 }
 }
