@@ -5,7 +5,7 @@
         <div class="col-md-3 register-left">
             <h3>Welcome</h3>
             <p>You are 30 seconds away from earning your own money!</p>
-            <a href="" class="btn btn-warning">Login</a>
+            <a href="{{ route('login') }}" class="btn btn-warning">Login</a>
         </div>
         <div class="col-md-9 register-right">
             <!-- Add your tab content and registration form here -->
