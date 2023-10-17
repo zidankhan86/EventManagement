@@ -13,17 +13,19 @@
       </tr>
     </thead>
     <tbody>
+        @foreach ($roles as $role)
+
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+        <th scope="row">{{ $role->id }}</th>
+        <td>{{ $role->user->name }}</td>
+        <td>{{ $role->Permission->name }}</td>
         <td>
             <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>
       </tr>
-
+      @endforeach
 
     </tbody>
   </table>

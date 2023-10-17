@@ -21,8 +21,8 @@
 
       <tr>
         <th scope="row">{{ $organize->id }}</th>
-        <td>{{ $organize->id }}</</td>
-        <td>{{ $organize->organiser_name }}</</td>
+        <td>{{ $organize->EventsOrganizer->event_name }}</</td>
+        <td>{{ $organize->user->name }}</td>
         <td>
             <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>

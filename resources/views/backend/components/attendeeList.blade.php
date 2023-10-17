@@ -16,19 +16,22 @@
       </tr>
     </thead>
     <tbody>
+        @foreach ($attendee as $user)
+
+
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
+        <th scope="row">{{ $user->id }}</th>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->date }}</td>
+        <td>{{ $user->status }}</td>
         <td>
             <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>
       </tr>
-
+      @endforeach
 
     </tbody>
   </table>
