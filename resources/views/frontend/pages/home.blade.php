@@ -1,11 +1,7 @@
 @extends('frontend\layouts\master')
 @section('content')
 
-<<<<<<< HEAD
-    @include('frontend\components\home')
-    @include('frontend\components\hero')
-
-=======
+<<<<<<<<< Temporary merge branch 1
 <div class="main-div">
     <img class="main-image" src="https://i.ibb.co/KVJBQWf/unsplash-F2-KRf-Qf-Cqw.png" alt="unsplash-F2-KRf-Qf-Cqw" border="0" />
     <div class="space-1"></div>
@@ -355,6 +351,10 @@
         <div class="card-img-title-2">ONLINE EVENT - Attend anywhere</div>
       </div>
     </div>
->>>>>>> ca15ea1fdaf31ecd7166047421cd16f5bc3acf34
+=========
+    @include('frontend\components\home')
+    @include('frontend\components\hero')
+
+>>>>>>>>> Temporary merge branch 2
 
 @endsection

@@ -1,49 +1,4 @@
-<style>
-    /* Style the table */
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    font-size: 16px;
-}
 
-/* Style table headers */
-.table th {
-    background-color: #0f365c;
-    color: #f3e9e9;
-    text-align: left;
-    padding: 12px;
-}
-
-/* Style table rows */
-.table td, .table th {
-    padding: 8px;
-    border: 1px solid #130b0b;
-}
-
-/* Style alternate rows with a different background color */
-.table tbody tr:nth-child(even) {
-    background-color: #0d3522;
-}
-
-/* Style the "Add Schedule" button */
-.btn-info {
-    background-color: #065534;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-/* Center-align the header text */
-h1 {
-    text-align: center;
-}
-
-</style>
 
 <h1 style="text-align: center">Attendee List</h1> <br><br>
 <div style="text-align: right">
@@ -57,23 +12,26 @@ h1 {
         <th scope="col">User Name</th>
         <th scope="col">Registration Date</th>
         <th scope="col">Registration Status</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
+        @foreach ($attendee as $user)
+
+
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
+        <th scope="row">{{ $user->id }}</th>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->date }}</td>
+        <td>{{ $user->status }}</td>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+        </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Otto</td>
-      </tr>
+      @endforeach
 
     </tbody>
   </table>

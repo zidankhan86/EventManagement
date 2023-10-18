@@ -18,20 +18,19 @@ class AttendeeController extends Controller
 
     public function AttendeeStore(Request $request){
         try {
-            $validatedData = $request->validate([
+            $data = $request->validate([
                 'event_id' => 'required',
                 'user_id' => 'required',
-                'date' => 'required|date',
-                'role' => 'required|string',
+                'date' => 'required',
                 'status' => 'required',
             ]);
 
-            Attendee::create($validatedData);
+            Attendee::create($data);
 
             return response()->json(['message' => 'Attendee created successfully']);
         } catch (\Exception $e) {
-            return response()->json(['message' => 'Attendee Create failed. Please try again.']);
+            return response()->json(['message' => 'Attendee creation failed. Please try again.']);
         }
-
     }
+
 }

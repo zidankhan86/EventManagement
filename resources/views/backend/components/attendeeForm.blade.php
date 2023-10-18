@@ -35,10 +35,11 @@
                             <option value="checked-in">Checked-In</option>
                         </select>
                     </div>
-                </form>
+
                     <div class="text-center">
-                        <button type="button" id="registerAttendee" class="btn btn-dark">Register Attendee</button>
+                        <button type="submit" id="registerAttendee" class="btn btn-dark">Register Attendee</button>
                     </div>
+                </form>
                 </div>
             </div>
         </div>

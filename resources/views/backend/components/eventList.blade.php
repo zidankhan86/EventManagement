@@ -14,6 +14,7 @@
         <th scope="col">Deadline</th>
         <th scope="col">Status</th>
         <th scope="col">Category</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,11 @@
         <td>{{ $item->registration_deadline }}</td>
         <td>{{ $item->is_published == 1 ? 'Publish':'Unpublish' }}</td>
         <td>{{ $item->category_id }}</td>
+        <td>
+            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+            <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
+        </td>
 
       </tr>
       @endforeach
