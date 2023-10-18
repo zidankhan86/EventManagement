@@ -12,6 +12,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
+use App\Models\EventCategory;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -67,7 +68,7 @@ Route::get('/attendee-list',[EventController::class,'attendeeList']);
 Route::get('/contactInfo-list',[EventController::class,'contactInfoList']);
 Route::get('/permission-list',[EventController::class,'permissionList']);
 Route::get('/usersRole-list',[EventController::class,'usersRoleList']);
-
+Route::get('/category-list',[EventCategoryController::class,'categoryList']);
 //Post Method
 Route::post('/eventCategory/create',[EventCategoryController::class,'EventCategoryCreate']);
 Route::post('/event-create',[EventController::class,'EventCreate']);
@@ -79,6 +80,11 @@ Route::post('/ticket-store',[TicketController::class,'TicketStore']);
 Route::post('/attendee-store',[AttendeeController::class,'AttendeeStore']);
 Route::post('/user-role-store',[RoleController::class,'userRoleStore']);
 Route::post('/organizer-store',[EventOrganizerController::class,'organizerStore']);
+
+
+//Edit
+Route::get('/eventCategory/edit/{id}',[EventCategoryController::class,'EventCategoryEdit']);
+
 });
 
 

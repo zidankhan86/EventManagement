@@ -68,5 +68,15 @@ class EventCategoryController extends Controller
     }
 }
 
+public function categoryList(){
+    $categories =EventCategory::all();
+    return view('backend.pages.categoryList',compact('categories'));
+}
+
+public function EventCategoryEdit($id){
+    $edit = EventCategory::find($id);
+    return view('backend.components.edit.categoryEdit',compact('edit'));
+}
+
 }
 
