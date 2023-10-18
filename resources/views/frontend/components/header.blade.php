@@ -13,8 +13,9 @@
 
         <div class="">
             @auth
-            <a href="#" class="nav-signup" style="color: green"><strong> {{ auth()->user()->name }}</strong></a>
+            <a href="{{ url('/profile') }}" class="nav-signup" style="color: green"><strong> {{ auth()->user()->name }}</strong></a>
             @endauth
+
         </div>
 
         <div class="nav-button-background">
