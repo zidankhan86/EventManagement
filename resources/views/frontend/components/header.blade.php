@@ -12,7 +12,9 @@
         <div> <ul> <a class="nav-list" href="{{ url('/collegeEvent-page') }}">College-events</a> </ul> </div>
 
         <div class="">
+            @auth
             <a href="#" class="nav-signup" style="color: green"><strong> {{ auth()->user()->name }}</strong></a>
+            @endauth
         </div>
 
         <div class="nav-button-background">

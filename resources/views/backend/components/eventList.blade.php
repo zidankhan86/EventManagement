@@ -1,5 +1,12 @@
 
-
+<style>
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid #fff;
+    }
+</style>
 <h1 style="text-align: center">Event List</h1> <br><br>
 <div class="container">
 <table class="table">
@@ -21,7 +28,7 @@
 
         @foreach ($events as $item)
       <tr>
-        <th><img height="50" width="60" src="{{ url('/storage/uploads/',$item->image) }}" alt=""></th>
+        <th><img  src="{{ url('/storage/uploads/',$item->image) }}" alt=""></th>
         <th scope="row">{{ $item->id }}</th>
         <td>{{ $item->event_name }}</td>
         <td>{{ $item->start_date }}</td>
