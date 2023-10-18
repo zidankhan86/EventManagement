@@ -74,4 +74,12 @@ class EventOrganizerController extends Controller
         }
     }
 
+    public function EventOrganizerEdit($id){
+        $events = Event::all();
+        $users =User::all();
+        $org =EventOrganizer::find($id);
+        return view('backend.pages.edit.eventOrganizerEidt',compact('events','users','org'));
+        
+    }
+
 }

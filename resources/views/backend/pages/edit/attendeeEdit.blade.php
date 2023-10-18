@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
 
-@include('backend\components\edit\eventEdit')
+@include('backend\components\edit\attendeeEdit')
 
 @endsection()

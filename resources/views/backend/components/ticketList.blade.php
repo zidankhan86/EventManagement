@@ -27,7 +27,7 @@
         <td>{{ $ticket->price }} Tk.</td>
         <td>{{ $ticket->quantity }}</td>
         <td>
-            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="{{ url('/ticket/edit',$ticket->id) }}" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>

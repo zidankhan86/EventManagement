@@ -38,7 +38,7 @@
         <td>{{ $item->is_published == 1 ? 'Publish':'Unpublish' }}</td>
         <td>{{ $item->category_id }}</td>
         <td>
-            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="{{ url('/event/edit',$item->id) }}" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>

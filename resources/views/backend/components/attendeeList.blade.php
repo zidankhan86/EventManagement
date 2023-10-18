@@ -21,12 +21,12 @@
 
       <tr>
         <th scope="row">{{ $user->id }}</th>
-        <td>{{ $user->id }}</td>
-        <td>{{ $user->id }}</td>
+        <td>{{ $user->Events->event_name }}</td>
+        <td>{{ $user->user->name }}</td>
         <td>{{ $user->date }}</td>
         <td>{{ $user->status }}</td>
         <td>
-            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="{{ url('/attendee/edit',$user->id) }}" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>

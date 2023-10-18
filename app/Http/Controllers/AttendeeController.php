@@ -33,4 +33,11 @@ class AttendeeController extends Controller
         }
     }
 
+
+    public function attendeeEdit($id){
+        $attendee = Attendee::find($id);
+        $users = User::all();
+        $events = Event::all();
+        return view('backend\pages\edit\attendeeEdit',compact('attendee','users','events'));
+    }
 }

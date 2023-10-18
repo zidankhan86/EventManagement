@@ -84,6 +84,10 @@ Route::post('/organizer-store',[EventOrganizerController::class,'organizerStore'
 
 //Edit
 Route::get('/eventCategory/edit/{id}',[EventCategoryController::class,'EventCategoryEdit']);
+Route::get('/ticket/edit/{id}',[TicketController::class,'TicketEdit']);
+Route::get('/event/edit/{id}',[EventController::class,'EventEdit']);
+Route::get('/eventOrganizer/edit/{id}',[EventOrganizerController::class,'EventOrganizerEdit']);
+Route::get('/attendee/edit/{id}',[AttendeeController::class,'attendeeEdit']);
 
 });
 
