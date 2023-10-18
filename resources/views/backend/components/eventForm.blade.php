@@ -41,6 +41,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="text-dark font-weight-medium" for="image">Choose Image</label>
+                        <input type="file" class="form-control" name="image" id="image" aria-label="">
+                    </div>
+
+
+                    <div class="form-group">
                         <label class="text-dark font-weight-medium" for="location">Location</label>
                         <input type="text" class="form-control" name="location" id="location" placeholder="Enter event location" aria-label="">
                     </div>
@@ -81,14 +87,19 @@
             let is_published = document.getElementById('is_published').value;
             let category_id = document.getElementById('category_id').value;
 
+            // Get the image input
+            let imageInput = document.getElementById('image');
+            let image = imageInput.files[0];
+
             // Check if any of the fields are empty
-            if (!event_name || !description || !start_date || !end_date || !location || !registration_deadline || !is_published || !category_id) {
+            if (!event_name || !description || !start_date || !end_date || !location || !registration_deadline || !is_published || !category_id || !image) {
                 alert('All fields are required');
             } else {
                 let formData = new FormData(eventForm);
                 let URL = "/event-create"; // Update with your actual endpoint
 
                 try {
+                    formData.append('image', image); // Append the image file to the form data
                     let response = await axios.post(URL, formData);
 
                     if (response.status === 201) {
@@ -105,3 +116,4 @@
         });
     });
 </script>
+

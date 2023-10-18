@@ -17,8 +17,10 @@
 
 @yield('content')
 
- @include('frontend\components\footer')
 
+<footer>
+ @include('frontend\components\footer')
+</footer>
 
 </body>
 </html>

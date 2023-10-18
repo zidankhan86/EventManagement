@@ -23,7 +23,7 @@ class EventController extends Controller
 {
     try {
         // Validate the incoming request data
-        $validatedData = $request->validate([
+         $request->validate([
             'event_name' => 'required',
             'category_id' => 'required',
             'description' => 'required',
@@ -33,9 +33,22 @@ class EventController extends Controller
             'registration_deadline' => 'required',
             'is_published' => 'required|in:0,1',
         ]);
+        $imageName = time() . '.' . $request->file('image')->extension();
+        $request->file('image')->storeAs('uploads', $imageName, 'public');
 
         // Create the event using the validated data
-        $event = Event::create($validatedData);
+        $event = Event::create([
+            "event_name"=>$request->event_name,
+            "category_id"=>$request->category_id,
+            "description"=>$request->description,
+            "start_date"=>$request->start_date,
+            "end_date"=>$request->end_date,
+            "location"=>$request->location,
+            "registration_deadline"=>$request->registration_deadline,
+            "is_published"=>$request->is_published,
+            "image"=>$imageName
+
+        ]);
 
         return response()->json([
             'success' => true,
@@ -53,7 +66,7 @@ class EventController extends Controller
 
 public function mappingList(){
     return view('backend.pages.mappingList');
-    
+
 }
 public function EventList(){
     $events = Event::all();
@@ -90,7 +103,7 @@ public function userList(){
 public function eventOrganistionList(){
     $organizer = EventOrganizer::all();
     return view('backend.pages.eventOrganistionList',compact('organizer'));
-    
+
 }
 
 public function attendeeList(){
@@ -100,7 +113,7 @@ public function attendeeList(){
 
 public function contactInfoList(){
     return view('backend.pages.contactInfoList');
-    
+
 }
 
 public function permissionList(){

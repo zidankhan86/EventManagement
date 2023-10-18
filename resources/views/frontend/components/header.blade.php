@@ -11,6 +11,10 @@
         <div> <ul> <a class="nav-list" href="{{ url('/college-page') }}">College</a> </ul> </div>
         <div> <ul> <a class="nav-list" href="{{ url('/collegeEvent-page') }}">College-events</a> </ul> </div>
 
+        <div class="">
+            <a href="#" class="nav-signup" style="color: green"><strong> {{ auth()->user()->name }}</strong></a>
+        </div>
+
         <div class="nav-button-background">
             <a href="{{ url('/login') }}" class="nav-login">Login</a>
         </div>

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('registration_deadline');
             $table->boolean('is_published');
             $table->unsignedBigInteger('category_id');
-
+            $table->string('image');
             $table->foreign('category_id')->references('id')->on('event_categories')
             ->restrictOnDelete()
             ->restrictOnUpdate();;

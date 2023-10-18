@@ -43,13 +43,16 @@ class AuthController extends Controller
         return view('backend.auth.login');
     }
 
+
+    //Login Process
     public function loginProcess(Request $request){
         $credential = $request->only(['email', 'password']);
 
         if (Auth::attempt($credential)) {
             if (auth()->user()->role == 'attendee') {
                 return redirect()->route('website');
-            } elseif (auth()->user()->role == 'organizer') {
+
+            } elseif (auth()->user()->role == 'organizer'or auth()->user()->role == 'admin') {
                 return redirect()->route('dashboard');
             }
         } else {
