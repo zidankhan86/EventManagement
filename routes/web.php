@@ -41,6 +41,8 @@ Route::post('/register',[AuthController::class,'register']);
 Route::get('/login',[AuthController::class,'login'])->name('login');
 Route::post('/login-process',[AuthController::class,'loginProcess']);
 Route::get('/logout',[AuthController::class,'logout']);
+//Profile frontend
+Route::get('/profile',[AuthController::class,'profile']);
 //Backend
 Route::group(['middleware'=>'auth'],function(){
 //pages

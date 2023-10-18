@@ -65,6 +65,10 @@ class AuthController extends Controller
         return redirect()->route('website');
     }
 
+    public function profile(){
+        return view('backend.profile.profile');
+    }
+
 
 
 }
