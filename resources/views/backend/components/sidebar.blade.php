@@ -48,8 +48,8 @@
                     <ul class="collapse " id="icons" data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         <li class="">
-                          <a class="sidenav-item-link" href="{{ url('/eventCategory/from') }}">
-                            <span class="nav-text">Add Category</span>
+                          <a class="sidenav-item-link" href="{{ url('/category-list') }}">
+                            <span class="nav-text">Events Category</span>
                           </a>
                         </li>
 
