@@ -7,9 +7,9 @@
         <div> <ul> <a class="nav-list" href="{{ url('/') }}">Home</a> </ul> </div>
         <div> <ul> <a class="nav-list" href="{{ url('/event-page') }}">Event</a> </ul> </div>
         <div> <ul> <a class="nav-list" href="#">Create-events</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/allEvent-page') }}">All-event</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/college-page') }}">College</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/collegeEvent-page') }}">College-events</a> </ul> </div>
+        <div> <ul> <a class="nav-list" href="{{ url('/allEvent-page') }}">Contact</a> </ul> </div>
+        <div> <ul> <a class="nav-list" href="#">About Us</a> </ul> </div>
+        <div> <ul> <a class="nav-list" href="{{ url('/profile') }}"> <Strong style="color: green">Profile</Strong> </a> </ul> </div>
 
 
 
