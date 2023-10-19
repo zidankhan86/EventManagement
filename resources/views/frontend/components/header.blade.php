@@ -11,7 +11,7 @@
         <div> <ul> <a class="nav-list" href="{{ url('/college-page') }}">College</a> </ul> </div>
         <div> <ul> <a class="nav-list" href="{{ url('/collegeEvent-page') }}">College-events</a> </ul> </div>
 
-        
+
 
         <div class="nav-button-background">
             <a href="{{ url('/login') }}" class="nav-login">Login</a>

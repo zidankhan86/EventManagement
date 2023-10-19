@@ -24,7 +24,7 @@
         <td>{{ $organize->EventsOrganizer->event_name }}</</td>
         <td>{{ $organize->user->name }}</td>
         <td>
-            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="{{ url('/eventOrganizer/edit',$organize->id) }}" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>

@@ -113,6 +113,8 @@ public function eventOrganistionList(){
 
 public function attendeeList(){
     $attendee = Attendee::all();
+    Event::with('Events')->where('event_name');
+    User::with('user')->where('name');
     return view('backend.pages.attendeeList',compact('attendee'));
 
 }
@@ -134,5 +136,11 @@ public function usersRoleList(){
     User::with('Permission')->where('type');
     return view('backend.pages.usersRoleList',compact('roles'));
 
+}
+
+public function EventEdit($id){
+    $categories = EventCategory::all();
+    $events = Event::find($id);
+    return view('backend.pages.edit.eventEdit',compact('categories','events'));
 }
 }

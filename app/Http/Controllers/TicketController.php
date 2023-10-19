@@ -28,5 +28,11 @@ class TicketController extends Controller
     } catch (\Exception $e) {
         return response()->json(['message' => 'Ticket creation failed. Please try again.'], 500);
     }
- }
+    }
+
+    public function TicketEdit($id){
+        $tickets = Ticket::find($id);
+        $events = Event::all();
+        return view('backend.pages.edit.ticketEdit',compact('tickets','events'));
+    }
 }

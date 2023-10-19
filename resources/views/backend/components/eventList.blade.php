@@ -1,5 +1,12 @@
 
-
+<style>
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid #fff;
+    }
+</style>
 <h1 style="text-align: center">Event List</h1> <br><br>
 <div class="container">
 <table class="table">
@@ -21,7 +28,7 @@
 
         @foreach ($events as $item)
       <tr>
-        <th><img height="50" width="60" src="{{ url('/storage/uploads/',$item->image) }}" alt=""></th>
+        <th><img  src="{{ url('/storage/uploads/',$item->image) }}" alt=""></th>
         <th scope="row">{{ $item->id }}</th>
         <td>{{ $item->event_name }}</td>
         <td>{{ $item->start_date }}</td>
@@ -31,7 +38,7 @@
         <td>{{ $item->is_published == 1 ? 'Publish':'Unpublish' }}</td>
         <td>{{ $item->category_id }}</td>
         <td>
-            <a href="" class="btn btn-success"><i class="fas fa-edit"></i></a>
+            <a href="{{ url('/event/edit',$item->id) }}" class="btn btn-success"><i class="fas fa-edit"></i></a>
             <a href="" class="btn btn-danger"><i class="fas fa-trash"></i></a>
             <a href="" class="btn btn-info"><i class="fas fa-eye"></i></a>
         </td>
