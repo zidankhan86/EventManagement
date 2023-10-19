@@ -78,5 +78,30 @@ public function EventCategoryEdit($id){
     return view('backend.components.edit.categoryEdit',compact('edit'));
 }
 
+public function EventCategoryUpdate(Request $request, $id){
+    $eventCategory = EventCategory::find($id);
+
+    try {
+
+        $eventCategory->update([
+            "category_name" => $request->category_name
+        ]);
+
+        // Return a success response
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Category created successfully'
+        ], 201); // 201 indicates "Created" status
+
+    } catch (\Exception $e) {
+        // Handle any errors or exceptions
+        return response()->json([
+            'status' => 'error',
+            'message' => 'Failed to create category'
+        ], 400); // 400 indicates "Bad Request" status
+    }
+
+}
+
 }
 

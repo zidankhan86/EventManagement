@@ -8,7 +8,7 @@
           <h2 style="text-align: center">Edit Category</h2>
         </div>
         <div class="card-body">
-            <form id="category" >
+            <form id="category" data-category-id="{{ $edit->id }}">
           <div class="form-group">
             <label class="text-dark font-weight-medium" for="eventName">Category Name</label>
             <input type="text" class="form-control" value="{{ $edit->category_name }}" name="category_name" id="category_name" placeholder="Enter Category Name" aria-label="">
@@ -31,6 +31,7 @@
         event.preventDefault();
 
         let category_name = document.getElementById('category_name').value;
+        let categoryId = categoryForm.getAttribute('data-category-id');
 
         if (category_name.length === 0) {
             alert('Name field is required');
@@ -38,13 +39,13 @@
             let formData = new FormData();
             formData.append('category_name', category_name);
 
-            let URL = "/eventCategory/create";
+            let URL = "/eventCategory/"+ categoryId;
 
             try {
                 let response = await axios.post(URL, formData);
 
                 if (response.status === 201) {
-                    toastr.success('Category created successfully', 'Success');
+                    toastr.success('Category updates successfully', 'Success');
                     categoryForm.reset();
                 } else {
                     toastr.error('Request failed', 'Error');
