@@ -91,6 +91,9 @@ Route::get('/event/edit/{id}',[EventController::class,'EventEdit']);
 Route::get('/eventOrganizer/edit/{id}',[EventOrganizerController::class,'EventOrganizerEdit']);
 Route::get('/attendee/edit/{id}',[AttendeeController::class,'attendeeEdit']);
 
+//Update
+Route::post('/eventCategory/{id}',[EventCategoryController::class,'EventCategoryUpdate']);
+
 });
 
 
