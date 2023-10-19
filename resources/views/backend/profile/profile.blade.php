@@ -151,8 +151,8 @@ p {
                                                                 <div class="m-b-25">
                                                                     <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
                                                                 </div>
-                                                                <h6 class="f-w-600">Hembo Tingor</h6>
-                                                                <p>Web Designer</p>
+                                                                <h6 class="f-w-600"><strong> {{ auth()->user()->name }}</strong></h6>
+                                                                <p>{{ auth()->user()->role }}</p>
                                                                 <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                                                             </div>
                                                         </div>
@@ -162,22 +162,22 @@ p {
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
                                                                         <p class="m-b-10 f-w-600">Email</p>
-                                                                        <h6 class="text-muted f-w-400">rntng@gmail.com</h6>
+                                                                        <h6 class="text-muted f-w-400">{{ auth()->user()->email }}</h6>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <p class="m-b-10 f-w-600">Phone</p>
-                                                                        <h6 class="text-muted f-w-400">98979989898</h6>
+                                                                        <h6 class="text-muted f-w-400">{{ auth()->user()->phone }}</h6>
                                                                     </div>
                                                                 </div>
                                                                 <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
                                                                 <div class="row">
                                                                     <div class="col-sm-6">
-                                                                        <p class="m-b-10 f-w-600">Recent</p>
-                                                                        <h6 class="text-muted f-w-400">Sam Disuja</h6>
+                                                                        <p class="m-b-10 f-w-600">Recent Tickets</p>
+                                                                        <h6 class="text-muted f-w-400">Not Yet Compelete</h6>
                                                                     </div>
                                                                     <div class="col-sm-6">
-                                                                        <p class="m-b-10 f-w-600">Most Viewed</p>
-                                                                        <h6 class="text-muted f-w-400">Dinoter husainm</h6>
+                                                                        <p class="m-b-10 f-w-600">Address</p>
+                                                                        <h6 class="text-muted f-w-400">{{ auth()->user()->address }}</h6>
                                                                     </div>
                                                                 </div>
                                                                 <ul class="social-link list-unstyled m-t-40 m-b-10">
