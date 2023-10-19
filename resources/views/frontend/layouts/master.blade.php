@@ -22,9 +22,9 @@
 @yield('content')
 
 
-<footer>
+
  @include('frontend\components\footer')
-</footer>
+
 
 </body>
 </html>

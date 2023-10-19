@@ -1,6 +1,3 @@
-
-
-
 <div class="footer-body">
     <div class="foot-event-hive-div"><span class="foot-event-text">Event</span><span class="nav-hive-text"> Hive</span></div>
     <!--email form-->
@@ -53,4 +50,3 @@
         <div class="foot-hindi-text">Hindi</div>
     </div>
 </div>
-

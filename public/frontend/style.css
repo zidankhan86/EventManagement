@@ -1,11 +1,11 @@
-      /*navbar*/
+/*navbar*/
 .parent-container {
-                                                /* Your existing styles for the parent container */
-         padding: 0 120px; /* Reduce 60px from both sides (adjust as needed) */
-     }
+    /* Your existing styles for the parent container */
+    padding: 0 120px; /* Reduce 60px from both sides (adjust as needed) */
+}
 
 .nav-body {
-     width: 1334px; /* Reduce the width from both sides (subtract 60px from each side) */
+    width: 1334px; /* Reduce the width from both sides (subtract 60px from each side) */
     height: 92px;
     display: inline-flex;
     background: #dbe6ff;
@@ -76,7 +76,7 @@ a.nav-list:hover{
 }
 
 
-                                                        /*footer*/
+/*footer*/
 .footer-body{
     width: 1440px;
     height: 334px;
@@ -207,7 +207,7 @@ a.nav-list:hover{
     word-wrap: break-word;
 }
 .foot-french-text{
-   text-align: center;
+    text-align: center;
     color: white;
     font-size: 10px;
     font-family: Product Sans, serif;
@@ -245,7 +245,7 @@ a.nav-list:hover{
     display: inline-flex;
 }
 
-                                            /*index*/
+/*index*/
 
 .main-div{
     width: 1440px;
@@ -254,6 +254,15 @@ a.nav-list:hover{
     background: #5ccada2b;
     border-radius: 20px;
     overflow: hidden;
+}
+
+.home-hero-div{
+    width: 1320px;
+    height: 883px;
+    position: relative;
+    left: 60 px;
+    top: 10px;
+
 }
 .space-1{
     width: 1200px;
@@ -266,7 +275,7 @@ a.nav-list:hover{
 }
 .main-image{
     width: 1320px;
-    height: 596px;
+    height: 746px;
     left: 60px;
     top: 10px;
     position: absolute;
@@ -313,7 +322,7 @@ a.nav-list:hover{
     display: inline-flex;
 }
 .looking-text{
-align-self: stretch;
+    align-self: stretch;
     color: #F8F8FA;
     font-size: 16px;
     font-family: Product Sans, serif;
@@ -418,12 +427,23 @@ align-self: stretch;
     top: 0;
     position: absolute;
 }
+.space-12-blog{
+    width: 1400px;
+    height: 10px;
+    left: 5px;
+    top: 0;
+    position: absolute;
+}
+
 .card-text{
     color: black;
     font-size: 36px;
     font-family: Product Sans, serif;
     font-weight: 700;
     word-wrap: break-word;
+    position: absolute;
+    left: 5px;
+    position: absolute;
 }
 .up-event-text{
     color: #7848F4;
@@ -431,6 +451,8 @@ align-self: stretch;
     font-family: Product Sans, serif;
     font-weight: 700;
     word-wrap: break-word;
+    position: absolute;
+    left: 180px;
 }
 .space-14{
     width: 460px;
@@ -441,6 +463,17 @@ align-self: stretch;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    display: inline-flex;
+}
+.space-14-1{
+    width: 500px;
+    height: 40px;
+    left: 740px;
+    top: 2px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     display: inline-flex;
 }
 .space-15{
@@ -473,6 +506,20 @@ align-self: stretch;
     padding: 15px 40px;
     left: 637px;
     top: 1831px;
+    position: absolute;
+    background: #7848F4;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+.load-more-div-hero-1{
+    width: 128px;
+    height: 49px;
+    padding: 15px 40px;
+    left: 637px;
+    top: 953px;
     position: absolute;
     background: #7848F4;
     border-radius: 5px;
@@ -523,7 +570,7 @@ align-self: stretch;
     width: 1200px;
     height: 400px;
     left: 120px;
-    top: 961px;
+    top: 0px;
     position: absolute;
     justify-content: flex-start;
     align-items: center;
@@ -534,7 +581,7 @@ align-self: stretch;
     width: 1200px;
     height: 400px;
     left: 120px;
-    top: 1391px;
+    top: 450px;
     position: absolute;
     justify-content: flex-start;
     align-items: center;
@@ -614,7 +661,7 @@ align-self: stretch;
     width: 1440px;
     height: 303px;
     left: 0px;
-    top: 1960px;
+    top: 33px;
     position: absolute;
 }
 .make-event-bg{
@@ -694,7 +741,7 @@ align-self: stretch;
     width: 1200px;
     height: 658px;
     left: 120px;
-    top: 2786px;
+    top: 830px;
     position: absolute;
 }
 .trending-div{
@@ -884,7 +931,7 @@ align-self: stretch;
     width: 1200px;
     height: 363.35px;
     left: 120px;
-    top: 2343px;
+    top: 388px;
     position: absolute;
 }
 .join-these-text-div{
@@ -1002,6 +1049,11 @@ align-self: stretch;
     top: 3524px;
     position: absolute
 }
+.our-blog-div-1{
+    left: 120px;
+    top: 0px;
+    position: absolute
+}
 .our-text{
     color: black;
     font-size: 36px;
@@ -1027,6 +1079,17 @@ align-self: stretch;
     gap: 20px;
     display: inline-flex;
 }
+.blog-div-1{
+    width: 1200px;
+    height: 400px;
+    left: 120px;
+    top: 82px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    display: inline-flex;
+}
 .index-footer-gap{
     width: 1440px;
     height: 334px;
@@ -1034,7 +1097,7 @@ align-self: stretch;
     top: 4125px;
     position: absolute;
 }
-                                         /*event*/
+/*event*/
 .event-full-div{
     width: 1440px;
     height: 2600px;
@@ -1098,29 +1161,29 @@ align-self: stretch;
     top: 0px;
     position: absolute;
     border-radius: 5px;
-   }
+}
 .event-hero-img-bg{
-       width: 1320px;
-       height: 600px;
-       left: 60px;
-       top: 90px;
-       position: absolute;
-       /*background: rgba(19, 19, 21, 0.50);*/
-       border-radius: 10px;
-   }
-   .event-back-bg{
-       padding: 10px;
-       left: 120px;
-       top: 159px;
-       position: absolute;
-       background: #7848F4;
-       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
-       border-radius: 5px;
-       justify-content: center;
-       align-items: center;
-       gap: 5px;
-       display: inline-flex;
-   }
+    width: 1320px;
+    height: 600px;
+    left: 60px;
+    top: 90px;
+    position: absolute;
+    /*background: rgba(19, 19, 21, 0.50);*/
+    border-radius: 10px;
+}
+.event-back-bg{
+    padding: 10px;
+    left: 120px;
+    top: 159px;
+    position: absolute;
+    background: #7848F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex;
+}
 .event-back-1{
     width: 20px;
     height: 20px;
@@ -1236,7 +1299,7 @@ align-self: stretch;
     font-family: Product Sans;
     font-weight: 400;
     word-wrap: break-word;
-  }
+}
 .event-pos-10{
     color: #7E7E7E;
     font-size: 16px;
@@ -1915,7 +1978,7 @@ align-self: stretch;
     gap: 20px;
     display: inline-flex;
 }
-                                                      /*college event*/
+/*college event*/
 
 .college-full-div{
     width: 1440px;
@@ -2012,13 +2075,13 @@ align-self: stretch;
     font-weight: 400;
     word-wrap: break-word;
 }
-    .college-cards-title-3{
-        color: #131315;
-        font-size: 36px;
-        font-family: Product Sans;
-        font-weight: 700;
-        word-wrap: break-word;
-    }
+.college-cards-title-3{
+    color: #131315;
+    font-size: 36px;
+    font-family: Product Sans;
+    font-weight: 700;
+    word-wrap: break-word;
+}
 .college-cards-title-4{
     color: #7848F4;
     font-size: 36px;
@@ -2026,7 +2089,7 @@ align-self: stretch;
     font-weight: 700;
     word-wrap: break-word;
 }
-                                                /*oops*/
+/*oops*/
 .oops-div{
     width: 1440px;
     height: 680px;
