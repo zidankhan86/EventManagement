@@ -93,7 +93,7 @@ Route::get('/attendee/edit/{id}',[AttendeeController::class,'attendeeEdit']);
 
 //Update
 Route::post('/eventCategory/{id}',[EventCategoryController::class,'EventCategoryUpdate']);
-
+Route::post('/ticket-update/{id}',[TicketController::class,'TicketUpdate']);
 });
 
 

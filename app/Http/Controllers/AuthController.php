@@ -44,7 +44,7 @@ class AuthController extends Controller
     }
 
 
-    //Login Process
+    //Login Process 
     public function loginProcess(Request $request){
         $credential = $request->only(['email', 'password']);
 
