@@ -1,35 +1,39 @@
-<div class="nav-body">
+ <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
 
-    <div style=" position:relative; top: 17px; left: 9px"> <span class="nav-event-text">Event Hive</span></div>
+      <div id="logo" class="pull-left">
 
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
 
-    <div class="nav-all-list">
-        <div> <ul> <a class="nav-list" href="{{ url('/') }}">Home</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/event-page') }}">Event</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="#">Create-events</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/allEvent-page') }}">Contact</a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="#">About Us</a> </ul> </div>
-
-        @auth
-@if (auth()->user()->role == 'attendee' or auth()->user()->role == 'organizer')
-
-
-        <div> <ul> <a class="nav-list" href="{{ url('/profile') }}"> <Strong style="color: green">Profile</Strong> </a> </ul> </div>
-        <div> <ul> <a class="nav-list" href="{{ url('/logout') }}"> <Strong style="color: rgb(216, 11, 11)">Logout</Strong> </a> </ul> </div>
-
-        @endauth
-
-        @else
-        <div class="nav-button-background">
-            <a href="{{ url('/login') }}" class="nav-login">Login</a>
-        </div>
-
-        <div class="nav-button-background">
-            <a href="{{ url('/registration') }}" class="nav-signup">Signup</a>
-        </div>
-
-        @endif
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{{route('website')}}">Home</a></li>
+          <li><a href="{{ route('event') }}">Event</a></li>
+          <li><a href="#speakers">Contact</a></li>
 
 
+
+            @auth
+            @if (auth()->user()->role == 'attendee' or  auth()->user()->role == 'attendee')
+        <li><a href="#hotels">Logout</a></li>
+        <li><a href="#gallery">Profile</a></li>
+            @endauth
+
+            @else
+
+          <li><a href="{{ route('login') }}">Login</a></li>
+          <li><a href="{{ route('registration') }}">Regester</a></li>
+
+          @endif
+
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="{{ route('ticket') }}">Buy Tickets</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    </div>
+  </header><!-- #header -->

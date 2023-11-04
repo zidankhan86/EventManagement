@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AttendeeController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BuyNowController;
 use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventOrganizerController;
@@ -30,13 +31,15 @@ use Illuminate\Support\Facades\Route;
 //Frontend
 
 Route::get('/',[FrontendHomeController::class,'website'])->name('website');
-Route::get('/event-page',[FrontendHomeController::class,'event']);
+Route::get('/event-page',[FrontendHomeController::class,'event'])->name('event');
 Route::get('/allEvent-page',[FrontendHomeController::class,'allEvent']);
 Route::get('/college-page',[FrontendHomeController::class,'college']);
 Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
+Route::get('/ticket',[TicketController::class,'ticket'])->name('ticket');
+Route::post('/buy',[BuyNowController::class,'buy'])->name('buy');
 
 //Auth
-Route::get('/registration',[AuthController::class,'registration']);
+Route::get('/registration',[AuthController::class,'registration'])->name('registration');
 Route::post('/register',[AuthController::class,'register']);
 Route::get('/login',[AuthController::class,'login'])->name('login');
 Route::post('/login-process',[AuthController::class,'loginProcess']);

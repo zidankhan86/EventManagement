@@ -53,5 +53,15 @@ class TicketController extends Controller
             return response()->json(['message' => 'Ticket creation failed. Please try again.'], 500);
         }
 
+
     }
+
+    public function ticket(){
+
+        $tickets = Ticket::all();
+        Event::with('EventTicket')->where('event_name');
+
+        return view('frontend.pages.ticket',compact('tickets'));
+    }
+
 }
