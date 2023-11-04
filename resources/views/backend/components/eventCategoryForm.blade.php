@@ -8,7 +8,7 @@
             <form id="category" >
           <div class="form-group">
             <label class="text-dark font-weight-medium" for="eventName">Category Name</label>
-            <input type="text" class="form-control" name="category_name" id="category_name" placeholder="Enter Category Name" aria-label="">
+            <input type="text" class="form-control"  name="category_name" id="category_name" placeholder="Enter Category Name" aria-label="">
           </div>
 
           <div class="text-center">
@@ -30,7 +30,7 @@
         let category_name = document.getElementById('category_name').value;
 
         if (category_name.length === 0) {
-            alert('Name field is required');
+            toastr.error('Name field is required');
         } else {
             let formData = new FormData();
             formData.append('category_name', category_name);

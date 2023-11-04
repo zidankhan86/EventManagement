@@ -103,5 +103,11 @@ public function EventCategoryUpdate(Request $request, $id){
 
 }
 
+public function category(){
+
+    $categories = EventCategory::all();
+    return view('frontend.pages.category',compact('categories'));
+}
+
 }
 

@@ -12,9 +12,14 @@ class HomeController extends Controller
         $events = Event::all();
         return view('frontend.pages.home',compact('events'));
     }
+
     public function event(){
+
         $events = Event::all();
+       // dd($events);
         return view('frontend.pages.event',compact('events'));
+
+
     }
     public function allEvent(){
         return view('frontend.pages.allEvent');
