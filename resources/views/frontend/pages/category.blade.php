@@ -1,3 +1,6 @@
+
+
+
 @extends('frontend\layouts\master')
 @section('content')
 
@@ -8,58 +11,21 @@
 
         <div class="container">
           <div class="section-header">
-            <h2>Sponsors</h2>
+            <h2>Categories</h2>
           </div>
 
-          <div class="row no-gutters sponsors-wrap clearfix">
+          <div class="row  sponsors-wrap clearfix">
+
+            @foreach ($categories as $item)
+
 
             <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/1.png" class="img-fluid" alt="">
-              </div>
+                <a href="" class="btn btn-success rounded-pill">{{ $item->category_name }}</a><br><br>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/2.png" class="img-fluid" alt="">
-              </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/3.png" class="img-fluid" alt="">
-              </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/4.png" class="img-fluid" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/5.png" class="img-fluid" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/6.png" class="img-fluid" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/7.png" class="img-fluid" alt="">
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="sponsor-logo">
-                <img src="img/sponsors/8.png" class="img-fluid" alt="">
-              </div>
-            </div>
+            @endforeach
 
           </div>
 

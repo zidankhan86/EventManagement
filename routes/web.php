@@ -37,6 +37,7 @@ Route::get('/college-page',[FrontendHomeController::class,'college']);
 Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
 Route::get('/ticket',[TicketController::class,'ticket'])->name('ticket');
 Route::post('/buy',[BuyNowController::class,'buy'])->name('buy');
+Route::get('/category',[EventCategoryController::class,'category'])->name('category');
 
 //Auth
 Route::get('/registration',[AuthController::class,'registration'])->name('registration');

@@ -30,7 +30,7 @@
 
           @endif
 
-          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="{{ route('category') }}">Category</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="buy-tickets"><a href="{{ route('ticket') }}">Buy Tickets</a></li>
         </ul>
