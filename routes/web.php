@@ -1,20 +1,21 @@
 <?php
 
-use App\Http\Controllers\AttendeeController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\BuyNowController;
-use App\Http\Controllers\EventCategoryController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\EventOrganizerController;
-use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PermissionController;
-use App\Http\Controllers\RoleController;
-use App\Http\Controllers\ScheduleController;
-use App\Http\Controllers\TicketController;
-use App\Http\Controllers\UserController;
 use App\Models\EventCategory;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\BuyNowController;
+use App\Http\Controllers\TicketController;
+use App\Http\Controllers\AttendeeController;
+use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\EventCategoryController;
+use App\Http\Controllers\EventOrganizerController;
+use App\Http\Controllers\SslCommerzPaymentController;
+use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,19 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// SSLCOMMERZ Start
+Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
+Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
+
+Route::post('/pay/{id}', [SslCommerzPaymentController::class, 'index'])->name('pay');
+Route::post('/pay-via-ajax', [SslCommerzPaymentController::class, 'payViaAjax']);
+
+Route::post('/success', [SslCommerzPaymentController::class, 'success']);
+Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
+Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
+
+Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
+//SSLCOMMERZ END
 
 
 //Frontend
@@ -35,8 +49,8 @@ Route::get('/event-page',[FrontendHomeController::class,'event'])->name('event')
 Route::get('/allEvent-page',[FrontendHomeController::class,'allEvent']);
 Route::get('/college-page',[FrontendHomeController::class,'college']);
 Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
-Route::get('/ticket',[TicketController::class,'ticket'])->name('ticket');
-Route::post('/buy',[BuyNowController::class,'buy'])->name('buy');
+Route::get('/schedule',[FrontendHomeController::class,'schedule'])->name('schedule');
+
 Route::get('/category',[EventCategoryController::class,'category'])->name('category');
 
 //Auth
@@ -98,6 +112,9 @@ Route::get('/attendee/edit/{id}',[AttendeeController::class,'attendeeEdit']);
 //Update
 Route::post('/eventCategory/{id}',[EventCategoryController::class,'EventCategoryUpdate']);
 Route::post('/ticket-update/{id}',[TicketController::class,'TicketUpdate']);
+
+Route::get('/ticket',[TicketController::class,'ticket'])->name('ticket');
+Route::post('/buy',[BuyNowController::class,'buy'])->name('buy');
 });
 
 

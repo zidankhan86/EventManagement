@@ -34,4 +34,10 @@ class HomeController extends Controller
 
     }
 
+    public function schedule(){
+
+        $schedules = Event::all();
+        return view('frontend.pages.schedule',compact('schedules'));
+    }
+
 }
