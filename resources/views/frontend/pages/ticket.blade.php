@@ -59,7 +59,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form method="POST" action="{{ route('buy') }}">
+                <form method="POST" action="{{ route('pay',$item->id) }}">
                     @csrf
                   <div class="form-group">
                     <input type="text" class="form-control" name="name" placeholder="Your Name">
@@ -73,6 +73,21 @@
                   <div class="text-center">
                     <button type="submit" class="btn">Buy Now</button>
                   </div>
+
+                  <div>
+                    <input type="hidden" name="price" value="{{ $item->price }}">
+                </div>
+                <div>
+                    <input type="hidden" name="currency" value="{{ $item->currency }}">
+                </div>
+                <div>
+                    <input type="hidden" name="event_id" value="{{ $item->id }}">
+                </div>
+                <div>
+                    <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+                </div>
+
+
                 </form>
               </div>
             </div><!-- /.modal-content -->
