@@ -14,6 +14,7 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\EventCategoryController;
 use App\Http\Controllers\EventOrganizerController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SslCommerzPaymentController;
 use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
 
@@ -76,6 +77,9 @@ Route::get('/attendee-from',[AttendeeController::class,'attendeeForm']);
 Route::get('/user-from',[UserController::class,'userForm']);
 Route::get('/user-role-form',[RoleController::class,'userRoleForm']);
 Route::get('/permission-form',[PermissionController::class,'permissionForm']);
+
+Route::get('/user-profile', [ProfileController::class,'index']);
+
 //Lists
 Route::get('/mapping-list',[EventController::class,'mappingList']);
 Route::get('/event-list',[EventController::class,'EventList']);

@@ -474,7 +474,7 @@
               </li>
 
               <li>
-                <a href="user-profile.html">
+                <a href="{{ url('user-profile') }}">
                   <i class="mdi mdi-account"></i> My Profile
                 </a>
               </li>
