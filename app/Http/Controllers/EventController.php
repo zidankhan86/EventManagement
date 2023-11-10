@@ -27,43 +27,43 @@ class EventController extends Controller
     try {
         // Validate the incoming request data
          $request->validate([
-            'event_name' => 'required',
-            'category_id' => 'required',
-            'description' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required',
-            'location' => 'required',
-            'registration_deadline' => 'required',
-            'is_published' => 'required|in:0,1',
+            'event_name'             => 'required',
+            'category_id'            => 'required',
+            'description'            => 'required',
+            'start_date'             => 'required',
+            'end_date'               => 'required',
+            'location'               => 'required',
+            'registration_deadline'  => 'required',
+            'is_published'           => 'required|in:0,1',
         ]);
         $imageName = time() . '.' . $request->file('image')->extension();
         $request->file('image')->storeAs('uploads', $imageName, 'public');
 
         // Create the event using the validated data
         $event = Event::create([
-            "event_name"=>$request->event_name,
-            "category_id"=>$request->category_id,
-            "description"=>$request->description,
-            "start_date"=>$request->start_date,
-            "end_date"=>$request->end_date,
-            "location"=>$request->location,
-            "registration_deadline"=>$request->registration_deadline,
-            "is_published"=>$request->is_published,
-            "image"=>$imageName
+            "event_name"             =>$request->event_name,
+            "category_id"            =>$request->category_id,
+            "description"            =>$request->description,
+            "start_date"             =>$request->start_date,
+            "end_date"               =>$request->end_date,
+            "location"               =>$request->location,
+            "registration_deadline"  =>$request->registration_deadline,
+            "is_published"           =>$request->is_published,
+            "image"                  =>$imageName
 
         ]);
 
         return response()->json([
-            'success' => true,
-            'message' => 'Event created successfully!',
-            'event' => $event,
+            'success'       => true,
+            'message'       => 'Event created successfully!',
+            'event'         => $event,
         ], 201);
     } catch (\Exception $e) {
         return response()->json([
-            'success' => false,
-            'message' => 'Something went wrong',
-            'error' => $e->getMessage(), //Optional
-        ], 500); // Use 500 status code for server error
+             'success'       => false,
+             'message'       => 'Something went wrong',
+             'error'         => $e->getMessage(), //Optional
+        ], 500);
     }
 }
 
@@ -142,5 +142,15 @@ public function EventEdit($id){
     $categories = EventCategory::all();
     $events = Event::find($id);
     return view('backend.pages.edit.eventEdit',compact('categories','events'));
+}
+
+public function details($id){
+    $details = Event::find($id);
+    $categories = EventCategory::all();
+    $latest = Event::latest()->take(2)->get();
+    $tickets = Ticket::all();
+
+
+    return view('frontend.pages.details',compact('details','categories','latest','tickets'));
 }
 }

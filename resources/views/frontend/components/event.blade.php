@@ -18,7 +18,7 @@
             <div class="col-lg-4 col-md-6">
               <div class="hotel">
                 <div class="hotel-img">
-                  <img src="{{ url('/storage/uploads/',$item->image) }}" alt="Hotel 1" class="img-fluid">
+                 <a href="{{ route('details',$item->id) }}"> <img src="{{ url('/storage/uploads/',$item->image) }}" alt="Hotel 1" class="img-fluid"></a>
                 </div>
                 <h3><a href="#">{{ $item->event_name }}</a></h3>
 

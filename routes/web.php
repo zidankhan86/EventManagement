@@ -31,14 +31,11 @@ use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
 // SSLCOMMERZ Start
 Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
 Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
-
 Route::post('/pay/{id}', [SslCommerzPaymentController::class, 'index'])->name('pay');
 Route::post('/pay-via-ajax', [SslCommerzPaymentController::class, 'payViaAjax']);
-
 Route::post('/success', [SslCommerzPaymentController::class, 'success']);
 Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
 Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
-
 Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
 //SSLCOMMERZ END
 
@@ -51,9 +48,8 @@ Route::get('/allEvent-page',[FrontendHomeController::class,'allEvent']);
 Route::get('/college-page',[FrontendHomeController::class,'college']);
 Route::get('/collegeEvent-page',[FrontendHomeController::class,'collegeEvent']);
 Route::get('/schedule',[FrontendHomeController::class,'schedule'])->name('schedule');
-
 Route::get('/category',[EventCategoryController::class,'category'])->name('category');
-
+Route::get('/details/{id}',[EventController::class,'details'])->name('details');
 //Auth
 Route::get('/registration',[AuthController::class,'registration'])->name('registration');
 Route::post('/register',[AuthController::class,'register']);
