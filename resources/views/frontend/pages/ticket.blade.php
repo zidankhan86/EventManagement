@@ -68,7 +68,7 @@
                     <input type="text" class="form-control" name="email" placeholder="Your Email">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="ticket_name" value="{{ $item->ticket_name }}" readonly>
+                    <input type="hidden" class="form-control" name="ticket_name" value="{{ $item->id }}" readonly>
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn">Buy Now</button>
